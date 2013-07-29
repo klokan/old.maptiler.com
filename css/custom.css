@@ -1,0 +1,27 @@
+/*
+* Theme Name: Invention
+* Theme URI: http://www.jozoor.com
+* Description: Invention Theme for corporate and creative sites, responsive and clean layout, more than color skins
+* Author: Jozoor team
+* Author URI: http://www.jozoor.com
+* Version: 1.0
+*/
+
+/*
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  
+=     00   00 00 00   00 00 00   00 00 00   00 00 00   00 00    =
+=     00   00    00        00    00    00   00    00   00       =
+=     00   00    00      00      00    00   00    00   00       =
+=     00   00    00    00        00    00   00    00   00       =
+=  00 00   00 00 00   00 00 00   00 00 00   00 00 00   00       =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+*/
+
+/* Custom CSS Code 
+=================================================*/
+
+/* this logo width & height , you can change it depend on your logo */
+.logo img {
+	width:171px;
+	height:33px;
+}
