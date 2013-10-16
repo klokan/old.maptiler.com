@@ -28,7 +28,6 @@
 * 6/20/2012
 */
 
-
 /* Table of Content
 ==================================================
 	#Reset & Basics
@@ -142,28 +141,29 @@ pre {
 
 /* Main Fonts
 ================================================== */
+
 body, .form-elements input, .form-elements textarea, .form-elements select, .qoute p, .tables-column .header h3 span.pop, .widget .followers li span, .one-page.welcome .welcome-text {
-	 font-family:'RobotoRegular', Arial, sans-serif;
+	 font-family:'Open Sans', Arial, sans-serif;
 }
 
 .navigation ul li, .latest-blog .item p, footer, p, .services.style-1 .item h3, .progress-bar h5, .button, #horizontal-tabs ul.tabs li, #vertical-tabs ul.tabs li, .alert p, .pagination, .qoute, .welcome, .progress-bar .meter, .testimonial-item .author span, .testimonial-item .author a, .team .item h4, .services.style-2 .item h4, .services.style-3 .item h4, .page-404 .oops, .tables-column .header h3, .tables-column .header .price, .tables-column .footer h4, .square-list li, .check-list li, .plus-list li, .arrow-list li, .cross-list li, .star-list li, .minus-list li, .heart-list li, .circle-list li, .asterisk-list li, .widget .followers h4, .sidebar .widget, .blog-3 .item a.title, .form-box label, .address-info li, .phone-info li, .email-info li, body.under-construction .content h2.title, body.under-construction .content .block .label, .slider-1 .slides li h2  {
-	 font-family:'RobotoMedium', Arial, sans-serif;
+	 font-family:'Open Sans', Arial, sans-serif; font-weight: 400;
 }
 
 h3.title, .subscribe input.submit, .about-author .content .data h5, .comments .comment-box h5, body.under-construction .content .block .flip-top, body.under-construction .content input.subscribe-button, .one-page h2.title, .one-page h1.title {
-	 font-family:'RobotoBold', Arial, sans-serif;
+	 font-family:'Open Sans', Arial, sans-serif; font-weight: 600; 
 }
 
 .img-caption .desc span, .more {
-	font-family:'RobotoThin', Arial, sans-serif;
+	font-family:'Open Sans', Arial, sans-serif; font-weight: 300; 
 }
 
 footer h3.title, .subscribe input.mail, blockquote, .about-author h3, .related-posts h3, .comments-box h3, .comment-form h3, .form-box input.text, .form-box textarea, body.under-construction .content p.text, body.under-construction .content input.subscribe-text, .slider-1 .slides li p, .slider-2 .slides li h2, .slider-2 .slides li p, .notification_error, .notification_ok {
-	font-family:'RobotoCondensed', Arial, sans-serif;
+	font-family:'Open Sans', Arial, sans-serif; font-weight: 300; 
 }
 
 .page-title h1, .one-page p.description {
-	font-family:'RobotoLight', Arial, sans-serif;
+	font-family:'Open Sans', Arial, sans-serif; font-weight: 300; 
 }
 
 /* font size */
