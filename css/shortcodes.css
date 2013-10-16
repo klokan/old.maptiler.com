@@ -644,6 +644,5 @@ table.style th, table.style td {
 }
 
 .tables-column .footer h4 a {
-	display:block;
-	padding:7px;
+	padding:10px 15px 10px 15px; 
 }

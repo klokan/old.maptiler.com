@@ -42,7 +42,7 @@ body.under-construction .content, .slider-1.iphone li {
 
 .navigation ul li a:hover, .navigation ul li a.selected, .navigation ul li.active a, .accordion p, #horizontal-tabs ul.tabs li, #vertical-tabs ul.tabs li, #horizontal-tabs.style2 .contents, #vertical-tabs.style2 .contents, #toggle-view .panel, #toggle-view li h4.normal, blockquote, .info-box, .pagination a, .breadcrumbs.gray, table.style th, .qoute, .welcome, .page-404, .tables-column, #options li a, .post-meta .meta, 
 .sidebar .widget .text-search, header .widget .text-search, .sidebar .popular-tags a, .widget .followers, .blog-3 .item .contain, .post-tags, .about-author .content, .notification_error {
-	background:#f9f9f9;
+	background:#fff;
 }
 
 .services.home, .testimonial-item p, .one-page .home-bg, .one-page.home-bg {
@@ -98,7 +98,7 @@ body.under-construction .content, .slider-1.iphone li {
 }
 
 .tables-column .header .price {
-	background:#ebebeb;
+	background:#fff;
 }
 
 /* google map bg */

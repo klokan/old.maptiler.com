@@ -58,6 +58,11 @@ body {
 ol, ul, li {
 	list-style: none; 
 }
+
+ul.list {
+	margin-bottom:20px;
+}
+
 blockquote, q {
 	quotes: none; 
 }
@@ -148,6 +153,14 @@ body, .form-elements input, .form-elements textarea, .form-elements select, .qou
 
 .navigation ul li, .latest-blog .item p, footer, p, .services.style-1 .item h3, .progress-bar h5, .button, #horizontal-tabs ul.tabs li, #vertical-tabs ul.tabs li, .alert p, .pagination, .qoute, .welcome, .progress-bar .meter, .testimonial-item .author span, .testimonial-item .author a, .team .item h4, .services.style-2 .item h4, .services.style-3 .item h4, .page-404 .oops, .tables-column .header h3, .tables-column .header .price, .tables-column .footer h4, .square-list li, .check-list li, .plus-list li, .arrow-list li, .cross-list li, .star-list li, .minus-list li, .heart-list li, .circle-list li, .asterisk-list li, .widget .followers h4, .sidebar .widget, .blog-3 .item a.title, .form-box label, .address-info li, .phone-info li, .email-info li, body.under-construction .content h2.title, body.under-construction .content .block .label, .slider-1 .slides li h2  {
 	 font-family:'Open Sans', Arial, sans-serif; font-weight: 400;
+}
+
+.price h2 {
+	margin-bottom: 40px;
+}
+
+.footer p{
+	margin-top: 20px;
 }
 
 h3.title, .subscribe input.submit, .about-author .content .data h5, .comments .comment-box h5, body.under-construction .content .block .flip-top, body.under-construction .content input.subscribe-button, .one-page h2.title, .one-page h1.title {
@@ -315,7 +328,7 @@ header.style-3.style-5 .navigation > #nav, .one-page.section h2, .one-page.secti
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
-	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h4 { font-size: 14px; line-height: 30px; margin-bottom: 4px; }
 	h5 { font-size: 17px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
 
