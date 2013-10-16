@@ -6,7 +6,7 @@
 
   <!-- Basic Page Needs -->
   <meta charset="utf-8">
-  <title>Georeferencer - fast maps for the web and mobile. Prepare map tiles for Google Maps, Google Earth KML SuperOverlay</title>
+  <title>MapRankSearch</title>
   <meta name="description" content="Georeferencer transforms raster maps into a format suitable for web applications, mobile devices and 3D visualisation. It is the fastest and simplest tool to prepare raster geodata for web mashups, mobile apps and for Google Earth. It produces either a a folder with tiles and simple HTML viewer or the MBTiles archive.">
   <meta name="author" content="Klokan Technologies GmbH">
 
@@ -99,9 +99,9 @@
         <div class="container clearfix">
 
          <div class="sixteen columns bottom-2"> 
-           <h1 class="title top-5">Turn scans into maps. Collaboratively.</h1> 
+           <h1 class="title top-5">MapRank Search</h1> 
            <p class="description bottom-4">
-            Georeferencer is an online service that turns the existing scans into true maps.</p>
+            Unique technology to explore thousands of maps in time</p>
              
          
 
@@ -121,12 +121,10 @@
 	         </div>
       
 	         <div class="eight columns">
-	           <h2 class="title">Features</h2> 
+	           <h2 class="title">Introduction</h2> 
 	           <p class="description bottom-4">
-	             Libraries, archives and other culture heritage institutions have begun a process of massive scanning and publishing of historical maps. A scanned map is only a picture and not a map at all: it is not searchable geographically and cannot be compared with other maps. 
-				 <p></p>
-				
-        Georeferencer gives libraries and archives an affordable and simple way how to engage online visitors an general public to work on attractive map collections, provides 3D visualization of maps via Google Earth, creates overlays with other maps, delivers standardized Web Map Service (OGC WMS) and in the same moment also enrich existing metadata records with numerical spatial footprint to allow comfortable geographical searching, such as the MapRank Search, in the future. It can be easily integrated in institution’s website
+	            Choose a place, select the time range, search and get the most relevant results. Welcome to the world of MapRank Search, a unique technology empowering its users to explore collections of maps in time and space faster then ever before. The whole process runs in your web browser, giving an instant response on the user's screen with no need to install any additional software.
+			
         </p>
       </div>
 
@@ -147,11 +145,9 @@
       </div>
 
       <div class="eight columns">
-        <h2 class="title">Crowdsourcing</h2> 
+        <h2 class="title">Map-driven Search Interface</h2> 
         <p class="description bottom-4">
-			The tool can be via so called “crowdsourcing” used by staff as well as by volunteers, either in groups explicitly organized for this task by the institution or simply recruited from online visitors and general public. In all cases, everybody can through an easy and enjoyable process georeference the scanned historical maps and then visualize them in 3D, conduct research and analysis on the online images as well as overlay these maps with modern base maps and recent aerial or satellite imagery. 
-			All features are available directly in a web browser, without a need of installing any software neither in the institution nor on the side of the online visitors. 
-			The participating libraries receives the produced metadata, which can be easily embedded into existing library catalog in a form of MARC field 034 or Dublin Core DCMI Box by the library. It is also possible to export GeoTiff or GIS-ready geodata for processing the maps in anther software.
+			The innovative web interface and a new indexing mechanism can significantly improve the way people use and explore collections of maps or geographic data. With MapRank Search anybody can naturally discover the documents they are looking for. Users will be pleasantly surprised how enjoyable the search process can suddenly be: the standard panning and zooming of the base map, familiar from the Google Maps interface, automatically refines the query. New documents from the catalog are dynamically presented in the list of results along with their geographical footprint - sorted by the MapRank® algorithm - with the most relevant documents geographically at the top.
         </p>
       </div>
 
@@ -172,12 +168,96 @@
       </div>
 
       <div class="eight columns">
-        <h2 class="title">Requirements</h2> 
+        <h2 class="title">The 4 W's: Where, When, What and Who</h2> 
         <p class="description bottom-4">
-			To fully utilize all functions available in the Georeferencer platform the map collections should provide a table with the list of the identifiers, links and metadata records. The list should be submitted in the form of Microsoft Excel / OpenOffice (XLS or CSV) file and contain unique identifier, image url (direct link to the zoomable image presentation) and image format (jpeg, png, etc..). More information available at: <a href="http://help.georeferencer.org/metadata">http://help.georeferencer.org/metadata</a>
-		    <p>
-		     For any questions or information regarding implementation of Georeferencer in your organization, please contact us.
+			The chosen geographical area of interest on the base map is only part of the query. Users can also select the time range on a timeline to define their selection more precisely. Such spatio-temporal requests are evaluated by the search engine and it immediately retrieves the most relevant maps or other documents. Users can also use traditional text search to refine the query further. This means they can easily get answers for questions such as: "maps from the 18th century printed by a particular publisher depicting a given area". Such queries are extremely hard to make with traditional, full-text search systems. Full-text alone would only identify relevant documents if users provide text which is referenced in the document's catalog entry. In addition to the above search criteria (area of interest, time range, text search) users can further narrow a search using predefined search categories such as "held by particular library", "not geological" etc. Such conditions can, of course, be combined to filter the results exactly in the way users require.
 		    </p>
+			
+        </p>
+      </div>
+
+     </div><!-- End Container -->
+   </div><!-- End section -->
+
+   <!-- ======================== End ======================== -->
+   
+   <!-- ======================== Start section ======================== -->
+
+   <div class="one-page section">
+     <div class="container clearfix">
+
+      <div class="eight columns">
+        <center>
+          <img src="maprank-search-screen-list.png" class="pic" />
+        </center>
+      </div>
+
+      <div class="eight columns">
+        <h2 class="title">Advanced Spatial Ranking</h2> 
+        <p class="description bottom-4">
+			The innovative MapRank algorithm ensures that the geographically most relevant documents are always on the top of the result list - and it also combines geographical query with the text search, selected time range and the map scale!
+			</p> <p class="description bottom-4">
+			Large digital libraries, growing catalogs of geodata, national spatial databases or large lists of spatial web services can profit from the new geographical indexing and advanced ranking function which is integrated in the MapRank Search engine.
+		</p> <p class="description bottom-4">
+			The indexing process supports existing metadata standards used today in large catalogs, including formats such as MARC (with field 034), DublinCore (with DCMI Box), FGDC or ISO 19139. Every indexed document must have a numerical spatial extent (boundaries in known coordinates, typically WGS84). Existing metadata records without a numerical footprint of their coverage can also be enriched with the help of tools we provide.
+</p> <p class="description bottom-4">
+			It is also possible to implement the search on top of large collections of GIS data - for example rasters (GeoTIFF, MrSID, ECW, GeoPDF, etc), vectors (ESRI ShapeFile, OGC/Google KML, etc) or online services (OGC WFS, OGC WMS, etc).
+</p> <p class="description bottom-4">
+			MapRank Search can index millions of records without any problems, and directly search them in a fraction of second. Results are then immediately presented to the user in a modern and intuitive user interface.
+</p> <p class="description bottom-4">
+			An almost live update of the search system can be implemented by automatic synchronization with the source catalog typically via OAI-PMH. MapRank Search can easily exchange metadata with most existing commercial or open-source library systems or geo-spatial catalogs.
+		    </p>
+			
+        </p>
+      </div>
+
+     </div><!-- End Container -->
+   </div><!-- End section -->
+
+   <!-- ======================== End ======================== -->
+   
+
+   <div class="one-page section">
+     <div class="container clearfix">
+
+      <div class="eight columns">
+        <center>
+          <img src="maprank-search-screen-prototype-interface.png" class="pic" />
+        </center>
+      </div>
+
+      <div class="eight columns">
+        <h2 class="title">Modern Search Interface</h2> 
+        <p class="description bottom-4">
+			MapRank Search comes with an interactive Web 2.0 interface, which is very fast and responsive and runs practically in every modern web browser. Your users do not need to install any software, they can just open the search system in a web browser. The web interface is prepared for customization: you can easily embed it into your website, present it with your own design, with your logo in the header, or provide the MapRank Search functionality completely as part of your existing websites. Localization is possible as well - the interface can be presented in multiple languages. By default the search interface utilizes the popular and fast Google Maps as the world-wide base map. There is also possibility to use Microsoft Bing Maps, OpenStreetMap data, Yahoo Maps or any country specific mapping datasets such as Ordnance Survey OpenData (United Kingdom) or even a publicly available OGC WMS service provided by a local geospatial authority.
+		    </p>
+			
+        </p>
+      </div>
+
+     </div><!-- End Container -->
+   </div><!-- End section -->
+
+   <!-- ======================== End ======================== -->
+   
+
+   <div class="one-page section">
+     <div class="container clearfix">
+
+      <div class="five columns">
+        <center>
+          <img src="apple-ipad-maprank-search.png" class="pic" />
+        </center>
+      </div>
+
+      <div class="eleven columns">
+        <h2 class="title">Spatial Browsing</h2> 
+        <p class="description bottom-4">
+			MapRank Search brings into life the concept of "spatial browsing", because it allows intuitive exploring of the catalog and automatic retrieval of the most geographically relevant documents.
+  </p><p class="description bottom-4">
+			With the help of the freely available Google Earth plugin the system can be used for browsing through your catalog even in a three-dimensional environment - all inside a web browser.
+  </p><p class="description bottom-4">
+			MapRank Search can be delivered together with a documented JavaScript AJAX API - with the possibility to embed the search results into third-party websites - or create a completely customized web interface or new mashups of the search results and external data or web services. The MapRank search queries follows the OpenSearch.org standard where possible.
 			
         </p>
       </div>
@@ -205,11 +285,10 @@
 
           <div class="ten columns">
 
-			  British Library - http://www.bl.uk/maps/index.html#<br>
-			  Staremapy.cz - http://www.staremapy.cz/<br>
-			  National Library of Scotland - http://maps.nls.uk/projects/georeferencer/ <br>
-			  National Archive Netherlands <br>
-			  BM Archives <br>
+			  Kartenportal<br>
+			  OldMapsOnline<br>
+			  David Rumsey <br>
+		
             
           </div>
          
@@ -226,173 +305,7 @@
 
 
 
-  <!-- ======================== End ======================== -->
-
-<div class="bottom-3" id="pricing">
-  <div class="container clearfix">
-
-   <div class="sixteen columns clearfix"><hr class="line top-3 bottom-3"></div><!-- End line -->
-   
-   <div class="sixteen columns bottom-1">
-     <h2 class="title bottom-2">Pricing</h2> 
-   </div>
-   
-   <!-- ==================== start 3 columns ==================== -->
  
-   <div class="one-third column tables-column">
-   
-    <div class="header">
-      <h3>Georeferencer Free</h3>
-      <div class="price">
-      <h2>-</h2>
-      <span>for free</span>
-      </div>
-    </div><!-- End header -->
-    <ul class="list">
-      <li>1 CPU core</li>
-      <li>"Georeferencer.com" watermark</li>
-      <li>Input 10000x10000 px</li>
-      <li>Single file input</li>
-      <li>No scripting</li>
-      <li>Native zoom levels</li>
-     
-    </ul>
-    <div class="footer">
-      <h4><a href="http://downloads.klokantech.com/maptiler/maptiler-0.4.2-free-win32-setup.exe">Download</a></h4>
-      <p>
-      <a href="http://itun.es/ch/jFlyJ.m">Mac OS X via App Store</a>
-    </div><!-- End footer -->
-    
-   </div><!-- End column -->
-   
-   <!-- ==== Featured Column ==== -->
-   <div class="one-third column tables-column">
-   
-    <div class="header">
-      <h3>Georeferencer Start</h3>
-      <div class="price">
-      <h2>24.99 <span class="currency">CHF</span></h2>
-      <span>price</span>
-      </div>
-    </div><!-- End header -->
-    <ul class="list">
-      <li>2 CPU cores</li>
-      <li>No watermark</li>
-      <li>Input 10000x10000 px</li>
-      <li>Single file input</li>
-      <li>No scripting</li>
-      <li>Custom zoom levels</li>
-    </ul>
-    <div class="footer">
-      <h4><a href="https://sites.fastspring.com/klokantech/instant/maptilerstart">Buy Now</a></h4>
-      <p>
-      <a href="http://itun.es/ch/jFlyJ.m">Mac OS X via App Store</a>
-    </div><!-- End footer -->
-    
-   </div><!-- End column -->
-   <!-- ==== End Featured Column ==== -->
-   
-   <div class="one-third column tables-column color">
-   
-    <div class="header">
-      <h3>Georeferencer Pro</h3>
-      <div class="price">
-      <h2>500 / 2.750&nbsp;<span class="currency">CHF</span></h2>
-      <span>for a month / forever</span>
-      </div>
-    </div><!-- End header -->
-    <ul class="list">
-      <li>4 CPU cores and more*</li>
-      <li>No watermark or a custom one</li>
-      <li>Unlimited size</li>
-      <li>Multi-file input</li>
-      <li>Command line automation</li>
-      <li>Advanced zoom levels</li>
-    </ul>
-    <div class="footer">
-      <h4><a href="http://www.klokantech.com/contact/">Request a demo</a></h4>
-      <p>
-      &nbsp;
-    </div><!-- End footer -->
-    
-   </div><!-- End column -->
-   
-
-   
-    </div><!-- End Container -->
-</div><!-- End about -->
-   
-   <!-- ==================== End 3 columns ==================== -->
-
- <!-- ======================== Developers ======================== -->
-
-     <div class="portfolio bottom-4" id="developers">
-      <div class="container top-5 clearfix">
-
-     <div class="sixteen columns"><hr class="line bottom-3"></div><!-- End line -->
-
-     <div class="latest-blog clearfix bottom-1">
-
-       <div class="slidewrap2" >
-
-      <div class="sixteen columns"> 
-       <h2 class="title bottom-3">Developers<!-- <a href="blog.html#5" class="more black" data="More...">+</a> --></h2>
-      </div>
-
-      <ul class="slider" id="sliderName2">
-
-        <li class="slide">
-
-          <!-- item -->
-          <div class="one-third column item">
-            <!--
-            <a href="http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/">
-            <img src="images/developer/google-maps-coordinates-tile-bounds-projection.jpg" alt="" class="pic" />
-            </a>
-            -->
-            <h3><a href="http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/">Tiles a la Google Maps</a></h3>
-            <p>Read more about the tiling system behind Google Maps and similar slippy maps.</p>
-          </div>
-          <!-- End -->
-
-          <!-- item -->
-          <div class="one-third column item">
-            <!--
-            <a href="single_post.html">
-            <img src="images/img/blog/thumb-2.jpg" alt="" class="pic" />
-            </a>
-            -->
-            <h3><a href="https://github.com/klokantech/maptiler-ios-start">Make your mobile app</a></h3>
-            <p>Download the source code and add your rendered map. Your first native iOS app!</p>
-          </div>
-          <!-- End -->
-
-          <!-- item -->
-          <div class="one-third column item">
-            <!--
-            <a href="single_post.html">
-            <img src="images/img/blog/thumb-3.jpg" alt="" class="pic" />
-            </a>
-            -->
-            <h3><a href="http://www.maptiler.org/photoshop-google-maps-overlay-tiles/">Overlays with Photoshop</a></h3>
-            <p>New to mapping? Design your maps with Photoshop or other other graphic software.</p>
-          </div>
-          <!-- End -->
-
-        </li><!-- End slide -->
-
-      </ul>
-
-      </div><!-- End slidewrap -->
-      
-      <center>From authors of the original <a href="http://www.maptiler.org/">Georeferencer OpenSource</a> and <a href="http://www.klokan.cz/projects/gdal2tiles/">GDAL2Tiles</a> software.</center>
-      
-
-     </div><!-- End latest-blog -->
-
-   </div><!-- End Container -->
-   </div><!-- End developers -->
-
    
    <!-- ======================== Start Our Work ======================== -->
    
