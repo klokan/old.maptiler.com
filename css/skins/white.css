@@ -206,6 +206,11 @@ header.style-4 .top-bar a {
 
 /* borders
 ================================================== */
+
+.main-header {
+  border-bottom: 1px #ddd solid;
+}
+
 .about-author .avatar img {
 	/*border:4px solid #fff;*/
 }
