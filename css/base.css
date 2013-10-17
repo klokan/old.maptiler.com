@@ -364,11 +364,11 @@ a, .subscribe input.submit, .button, #horizontal-tabs.style2 ul.tabs li, #vertic
 }
 
 .services.style-1 .item .circle, .latest-blog .item img, .featured-clients img, .services.style-2 .item .circle, .services.style-3 .item .circle, .image-post img, .widget.most-posts ul.posts li img, #footer.thumbs li img, #sidebar.thumbs li img, .related-posts .item img { 
-	-webkit-transition: all 0.4s ease-in;  
-    -moz-transition: all 0.4s ease-in;  
-    -ms-transition: all 0.4s ease-in;  
-    -o-transition: all 0.4s ease-in;  
-    transition: all 0.4s ease-in;
+	-webkit-transition: all 0.2s ease-in;  
+    -moz-transition: all 0.2s ease-in;  
+    -ms-transition: all 0.2s ease-in;  
+    -o-transition: all 0.2s ease-in;  
+    transition: all 0.2s ease-in;
 }
 
 a { 
