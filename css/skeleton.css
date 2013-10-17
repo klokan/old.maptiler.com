@@ -54,7 +54,7 @@
     .container .one.columns                     { width: 40px;  }
     .container .two.columns                     { width: 100px; }
     .container .three.columns                   { width: auto; margin-right:30px; }
-    .container .four.columns                    { width: 220px; }
+    .container .four.columns                    { width: auto; }
     .container .five.columns                    { width: 280px; }
     .container .six.columns                     { width: auto; margin-top: 50px; }
     .container .seven.columns                   { width: 400px; }
