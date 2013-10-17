@@ -12,7 +12,9 @@
 
 /* this logo width & height , you can change it depend on your logo */
 .logo img {
-
+	width:auto;
+	height: auto;
+	max-height:43px;
 }
 
 .social {
