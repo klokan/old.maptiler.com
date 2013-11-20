@@ -174,7 +174,7 @@ header.style-3.style-5 .navigation > #nav {
 }
 
 header.style-3.style-5 .down-header {
-	min-height:66px;
+	min-height: 55px;
 }
 
 /* header sticky fixed */
