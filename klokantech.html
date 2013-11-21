@@ -25,13 +25,46 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     
     <style type="text/css">
-        .product_logo { margin-bottom: 20px; margin-right: 20px; }
-        .logo img { width: auto; height: auto; max-height: 60px; margin: 20px 0; }
-        header .down-header { background-color: #f6f6f6; }
+        
+        body.one-page { margin-bottom: 0; }
+        
+        .padding-0-40 { padding: 0 40px;}
         .top-bar { background-color: White; border-bottom: 1px solid #e6e6e6; color: #858889; } 
         .top-bar a, header .social a { color: #858889; }
-        .phone-mail a:hover, header .social a:hover { color: #adafb0; }        
-        .padding-0-10 { padding: 0 10px;}
+        header .social a:hover, header .social a:hover, .phone-mail a:hover { color: #adafb0; }
+        .phone-mail { padding-top: 7px;}                        
+        .social { padding-top: 5px; }
+        .social a { display: inline-block; margin: 0 0 0 14px; }                                
+        
+        .logo img { height: 77px; min-height: 77px; max-height: 77px; width: auto; margin: 17px 0 19px; }
+        .main-header { border-bottom: 0; }
+        header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
+        .navigation ul li { text-transform: none; } 
+        .navigation ul li a { color: #a8a8a8; font-size: 14px;}
+        
+        .one-page { margin-bottom: 24px; }
+        .one-page h1.title { font: 400 30px/1 'Open Sans'; margin: 65px 0 23px; color: #393939; }
+        .one-page p.description { color: #989898; font: 400 14px/20px 'Open Sans'; margin-bottom: 77px;}
+        
+        .services { margin-bottom: 82px;}
+        .services .column { margin-bottom: 39px; }
+        .services .item { margin: 0 25px; }
+        .services .product_logo { margin: -4px 35px 35px 0;}
+        .services h3,
+        .services h3 a { font: 400 18px/22px 'Open Sans'; color: #3c3c3c; }
+        .services p { font: 400 12px/15px 'Open Sans'; color: #989898; margin-bottom: 27px;}
+        .services a { font: 400 12px/15px 'Open Sans'; color: #535353; }
+        .services a:hover {}
+        
+        .oldmaponline { margin-bottom: 70px; }
+        .oldmaponline h3 { font: 400 24px/1 'Open Sans'; margin: 2px 0 17px 0;}
+        .oldmaponline p { border-bottom: 1px solid #ece9e0; margin-left: 260px; padding-bottom: 21px; margin-bottom: 12px; line-height: 20px; }
+        .oldmaponline a { float: right; margin-top: 12px; font: 400 12px/15px 'Open Sans'; color: #535353; }
+        .oldmaponline .logo_oldmaps { position: relative; top: -1px; left: -2px;}
+ 
+        .footer-down { padding: 15px 0; background: White; border-top: 1px solid #eae6e2; color: #989898; font-size: 11px; }
+        .align-right { text-align: right;}
+               
     </style>
 
 </head>
@@ -39,17 +72,19 @@
     <div id="wrap" class="boxed">
         <header class="style-3 style-5" id="home">
             <div class="top-bar">
-                <div class="clearfix padding-0-10">
+                <div class="clearfix padding-0-40">
                     <div class="slidedown">
                         <div class="float-left">
                             <div class="phone-mail">
-                                <a href="mailto:info@klokantech.com"><i class="icon-envelope s-20"></i> mail us</a>
+                                <a href="mailto:info@klokantech.com"><i class="icon-envelope s-15"></i> mail us</a>
                             </div>
                             <!-- End phone-mail -->
                         </div>
                         <div class="float-right">
                             <div class="social">
-                                Klokan Technologies News: <a href="https://plus.google.com/112524594087395104243" rel="publisher"><i class="social_icon-gplus s-18"></i></a><a href="https://twitter.com/klokantech"><i class="social_icon-twitter s-14"></i></a><a href="https://www.facebook.com/maptiler"><i class="social_icon-facebook s-18"></i></a>
+                                <a href="https://www.facebook.com/maptiler"><i class="social_icon-facebook s-15"></i></a>                                
+                                <a href="https://twitter.com/klokantech"><i class="social_icon-twitter s-12"></i></a>
+                                <a href="https://plus.google.com/112524594087395104243" rel="publisher"><i class="social_icon-gplus s-15"></i></a>
                             </div>
                         </div>
                         <!-- End social-icons -->
@@ -66,7 +101,7 @@
                     <div class="sixteen columns">
                         <div class="logo">
                             <a href="klokantech.html">
-                                <img src="images/klokantech1.png" alt="Klokan Technologies" />
+                                <img src="images/klokantech2.png" alt="Klokan Technologies" />
                             </a>
                         </div>
                     </div>
@@ -81,9 +116,10 @@
                         <nav id="menu" class="navigation" role="navigation">
                             <a href="#">Show navigation</a><!-- this appear on small devices -->
                             <ul id="nav">
-                                <li><a href="#home">Products</a></li>
-                                <li><a href="#home">Clients</a></li>
-                                <li><a href="#home">Open Source</a></li>
+                                <li><a href="klokantech.html">Home</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">References</a></li>
+                                <li><a href="#">Open source</a></li>
                                 <li><a href="klokantech-company.html">Company</a></li>
                                 <li><a href="klokantech-contact.html">Contact</a></li>
                             </ul>
@@ -96,13 +132,15 @@
             <!-- End main-header -->
         </header><!-- <<< End Header >>> -->
         <!-- ======================== Start welcome ======================== -->
-        <div class="one-page bottom-2" style="">
+        <div class="one-page">
             <div class="container clearfix">
                 <div class="sixteen columns bottom-2" style="border-bottom: 1px solid #e6e6e6; ">
-                    <h1 class="title top-5 bottom-3">
-                        Maps for people.</h1>
-                    <p class="description bottom-4">
-                        Klokan Technologies GmbH is a Swiss company specialized in online map publishing, geographic information retrieval and applications of open-source software for the culture heritage sector. The company provides contracted software development, consulting services and participates on research projects world-wide.
+                    <h1 class="title">
+                        Maps for People. Online.</h1>
+                    <p class="description">
+                        Klokan Technologies GmbH is a Swiss company specialized in online <br />
+                        map publishing, geographic information retrieval and applications of <br />
+                        open-source software for the culture heritage sector.
                     </p>
                     <!--
         <center><a href="#" class="button large color">
@@ -114,9 +152,9 @@
         </div>
         <!-- End welcome -->
         <!-- ======================== End ======================== -->
-        <div class="services style-1 bottom-5">
-            <div class="container clearfix bottom-2" style="border-bottom: 1px solid #e6e6e6;">
-                <div class="one-third column bottom-4">
+        <div class="services">
+            <div class="container clearfix" style="border-bottom: 1px solid #e6e6e6;">
+                <div class="one-third column">
                     <div class="item">
                         <div class="float-left">
                             <a href="#">
@@ -124,23 +162,12 @@
                         </div>
                         <h3><a href="#">MapTiler</a></h3>
                         <p>
-                            Fast maps for the web and for mobile devices.</p>
+                            Fast maps for the web and mobile.</p>
+                        <a href="http://www.maptiler.com">www.maptiler.com</a>
                     </div>
                 </div>
-                <!-- End item -->
-                <div class="one-third column bottom-4">
-                    <div class="item">
-                        <div class="float-left">
-                            <a href="#">
-                                <img src="images/klokantech/logo_mapranksearch.png" class="product_logo" /></a>
-                        </div>
-                        <h3><a href="#">MapRank Search</a></h3>
-                        <p>
-                            Unique technology to explore thousands of maps in time.</p>
-                    </div>
-                </div>
-                <!-- End item -->
-                <div class="one-third column bottom-4">
+                <!-- End item -->               
+                <div class="one-third column">
                     <div class="item">
                         <div class="float-left">
                             <a href="#">
@@ -148,7 +175,21 @@
                         </div>
                         <h3><a href="#">Georeferencer</a></h3>
                         <p>
-                            Online service to turn scans into maps. Collaboratively.</p>
+                            Turn an Image to a map in seconds.</p>
+                        <a href="http://www.georeferencer.com">www.georeferencer.com</a>
+                    </div>
+                </div>
+                <!-- End item -->
+                 <div class="one-third column">
+                    <div class="item">
+                        <div class="float-left">
+                            <a href="#">
+                                <img src="images/klokantech/logo_mapranksearch.png" class="product_logo" /></a>
+                        </div>
+                        <h3><a href="#">MapRank Search</a></h3>
+                        <p>
+                            Explore thousands of maps in time.</p>
+                        <a href="http://www.mapranksearch.com">www.mapranksearch.com</a>
                     </div>
                 </div>
                 <!-- End item -->
@@ -157,21 +198,19 @@
         </div>
         <!-- End services -->
 
-        <div class="bottom-5" id="features">
+        <div class="oldmaponline">
                 <div class="container clearfix">
                     <img src="images/klokantech/screenshot_oldmaps.jpg" class="float-left" style="margin-right: 40px;" />
-                    <h3 class="title">Discover the Cartography of the past</h3>
-                    <p style="border-bottom: 1px solid #ece9e0; margin-left: 260px; padding-bottom: 12px; margin-bottom: 12px; ">
+                    <h3>Discover the Cartography of the past</h3>
+                    <p>
                         Klokantech GmbH is a Swiss company specialized in online map publishing, geographic information retrieval and application of open-source software for the cultural heritage sector.
                     </p>
-                    <img src="images/klokantech/logo_oldmaps.png" />
-                    <a style="float: right; margin-top: 13px; font-size: 10px;" href="#">
+                    <img src="images/klokantech/logo_oldmaps.png" class="logo_oldmaps" />
+                    <a href="http://www.OldMapsOnline.org">
                         www.OldMapsOnline.org
                     </a>
                 </div>                
             </div>
-
-
 
     </div>
     <!-- End Container -->
@@ -179,15 +218,13 @@
         <div class="footer-down">
             <div class="container clearfix">
                 <div class="eight columns">
-                    <span class="copyright">© Copyright 2013 <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a>. All Rights Reserved.</span>
+                    Copyright Klokantech 2014
                 </div>
                 <!-- End copyright -->
-                <div class="eight columns">
-                    <div class="social">
-                        Klokan Technologies News: <a href="https://plus.google.com/112524594087395104243" rel="publisher"><i class="social_icon-gplus s-18"></i></a><a href="https://twitter.com/klokantech"><i class="social_icon-twitter s-14"></i></a><a href="https://www.facebook.com/maptiler"><i class="social_icon-facebook s-18"></i></a>
-                    </div>
+                <div class="eight columns align-right">                    
+                    Phone: + 345 890 098 980                    
                 </div>
-                <!-- End social icons -->
+                <!-- End phone -->
             </div>
             <!-- End container -->
         </div>
