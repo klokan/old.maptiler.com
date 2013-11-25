@@ -1,0 +1,37 @@
+﻿.padding-0-40 { padding: 0 40px;}
+.top-bar { background-color: White; border-bottom: 1px solid #e6e6e6; color: #858889; } 
+.top-bar a, header .social a { color: #858889; }
+header .social a:hover, header .social a:hover, .phone-mail a:hover { color: #adafb0; }
+.phone-mail { padding-top: 7px;}                        
+.social { padding-top: 5px; }
+.social a { display: inline-block; margin: 0 0 0 14px; }                                
+        
+.logo img { height: 77px; min-height: 77px; max-height: 77px; width: auto; margin: 17px 0 19px; }
+.main-header { border-bottom: 0; }
+header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
+.navigation ul li { text-transform: none; } 
+.navigation ul li a { color: #a8a8a8; font-size: 14px;}
+        
+.one-page { margin-bottom: 24px; }
+.one-page h1.title { font: 400 30px/1 'Open Sans'; margin: 65px 0 23px; color: #393939; }
+.one-page p.description { color: #989898; font: 400 14px/20px 'Open Sans'; margin-bottom: 77px;}
+        
+.services { margin-bottom: 82px;}
+.services .column { margin-bottom: 39px; }
+.services .item { margin: 0 25px; }
+.services .product_logo { margin: -4px 35px 35px 0;}
+.services h3,
+.services h3 a { font: 400 18px/22px 'Open Sans'; color: #3c3c3c; }
+.services p { font: 400 12px/15px 'Open Sans'; color: #989898; margin-bottom: 27px;}
+.services a { font: 400 12px/15px 'Open Sans'; color: #535353; }
+.services a:hover {}
+        
+.oldmaponline { margin-bottom: 70px; }
+.oldmaponline h3 { font: 400 24px/1 'Open Sans'; margin: 2px 0 17px 0;}
+.oldmaponline p { border-bottom: 1px solid #ece9e0; margin-left: 260px; padding-bottom: 21px; margin-bottom: 12px; line-height: 20px; }
+.oldmaponline a { float: right; margin-top: 12px; font: 400 12px/15px 'Open Sans'; color: #535353; }
+.oldmaponline .logo_oldmaps { position: relative; top: -1px; left: -2px;}
+ 
+.footer-down { padding: 15px 0; background: White; border-top: 1px solid #eae6e2; color: #989898; font-size: 11px; }
+.align-right { text-align: right;}
+               
