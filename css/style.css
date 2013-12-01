@@ -1172,6 +1172,11 @@ header.style-3 #menu > ul {
 	top: 51px;
 }
 
+header.style-3.style-5 .navigation > #nav {	
+	display: none;
+}
+
+
 #menu > ul > li {
 	width: 100%;
 }
