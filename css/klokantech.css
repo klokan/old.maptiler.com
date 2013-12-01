@@ -24,7 +24,8 @@ header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
 .services h3 a { font: 400 18px/22px 'Open Sans'; color: #3c3c3c; }
 .services p { font: 400 12px/15px 'Open Sans'; color: #989898; margin-bottom: 27px;}
 .services a { font: 400 12px/15px 'Open Sans'; color: #535353; }
-.services a:hover {}
+.services a.linkBlue { color: #00549a; text-decoration: underline; }
+.services a:hover { text-decoration: none; }
         
 .oldmaponline { margin-bottom: 70px; }
 .oldmaponline h3 { font: 400 24px/1 'Open Sans'; margin: 2px 0 17px 0;}
@@ -33,5 +34,7 @@ header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
 .oldmaponline .logo_oldmaps { position: relative; top: -1px; left: -2px;}
  
 .footer-down { padding: 15px 0; background: White; border-top: 1px solid #eae6e2; color: #989898; font-size: 11px; }
+
 .align-right { text-align: right;}
+
                
