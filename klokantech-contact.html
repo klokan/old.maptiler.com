@@ -27,15 +27,9 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     
     <style type="text/css">
-/*        .product_logo { margin-bottom: 20px; margin-right: 20px; }
-        .logo img { width: auto; height: auto; max-height: 60px; margin: 20px 0; }
-        header .down-header { background-color: #f6f6f6; }
-        .top-bar { background-color: White; border-bottom: 1px solid #e6e6e6; color: #858889; } 
-        .top-bar a, header .social a { color: #858889; }                
-        .padding-0-10 { padding: 0 10px;}
-        .form-box textarea { min-height:125px; }
-        .button.color, .share-social a { background: #255d9d;}
-        .share-social a:hover { background: black; }  */
+
+
+
     </style>
 </head>
 <body>
@@ -105,52 +99,40 @@
         <!-- <<< End Header >>> -->        
         <!-- Start main content -->
         <div class="container main-content clearfix">
-            <div class="eleven columns top-3 bottom-2">
-                <h3 class="title bottom-2">Get in touch</h3>
-                <p>
-                    Please fill in the following details and we'll be in touch shortly<br />
-                    Be sure the email you mention is correct, otherwise we can not answer you.<br />
+            <div class="eight columns top-6 bottom-6" style="text-align: right;">
+                <!--<p>                    
                     <div id="note"></div><br />
-                </p>
+                </p>-->
                 <!-- End notification -->
-                <div id="fields">
-                    <form id="ajax-contact-form" action="">
-                    <div class="form-box">
-                        <label>
-                            Name <small>*</small></label>
+                
+                <form id="ajax-contact-form" action="">
+                    <div class="form-line">
+                        <label>Name</label>
                         <input type="text" name="name" class="text">
                     </div>
                     <!-- End Box -->
-                    <div class="form-box">
-                        <label>
-                            Email <small>*</small></label>
+                    <div class="form-line">
+                        <label>Email</label>
                         <input type="text" name="email" class="text">
                     </div>
-                    <!-- End Box -->
-                    <div class="form-box last">
-                        <label>
-                            Subject
-                        </label>
-                        <input type="text" name="subject" class="text">
-                    </div>
-                    <!-- End Box -->
-                    <div class="form-box big">
-                        <label>
-                            Message <small>*</small></label>
+                    <!-- End Box -->                    
+                    <div class="form-line big">
+                        <label>Message</label>
                         <textarea name="message"></textarea>
                     </div>
                     <!-- End Box -->
                     <div class="clearfix">
                     </div>
-                    <input type="submit" value="Send Message" class="button medium color" />
-                    </form>
-                </div>
+                    <input type="submit" value="Send" class="button small color" />
+                </form>
+                
                 <!-- End fields -->
             </div>
-            <div class="five columns top-3 bottom-2">
-                <h3 class="title bottom-2">Contact Info</h3>
+            <div class="one columns top-6 bottom-6">
+            </div>
+            <div class="seven columns top-6 bottom-6 address-box">
                 <ul class="address-info">
-                    <li><strong>Klokan Technologies GmbH</strong><br />
+                    <li>Klokan Technologies GmbH<br />
                         Bahnhofstrasse 9<br />
                         6340 Baar, Switzerland<br />
                         Europe</li>
@@ -166,14 +148,7 @@
                         ID: CH-170.4.009.510-4<br />
                         VAT: CHE-115.421.836
                     </li>
-                </ul>
-
-                <h3 class="title top-2 bottom-2">Social Contact</h3>
-                <div class="share-social">
-                    <a href="https://twitter.com/klokantech" target="_blank"><i class="social_icon-twitter s-17 white"></i></a>
-                    <a href="https://www.facebook.com/maptiler" target="_blank"><i class="social_icon-facebook s-18 white"></i></a>                    
-                    <a href="https://plus.google.com/112524594087395104243" target="_blank"><i class="social_icon-gplus s-18 white"></i></a>                    
-                </div>
+                </ul>                                                
             </div>
         </div>
         <!-- <<< End Container >>> -->

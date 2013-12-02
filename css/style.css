@@ -968,7 +968,7 @@ html.ie.ie8 .comments .comment-box .avatar img {
 /* contact info */
 .address-info li, .phone-info li, .email-info li, .registration-info li {
 	padding:5px 5px 5px 35px;
-	line-height:25px;
+	line-height: 20px;
 	position: relative;
 }
 

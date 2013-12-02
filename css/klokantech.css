@@ -34,7 +34,33 @@ header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
 .oldmaponline .logo_oldmaps { position: relative; top: -1px; left: -2px;}
  
 .footer-down { padding: 15px 0; background: White; border-top: 1px solid #eae6e2; color: #989898; font-size: 11px; }
-
 .align-right { text-align: right;}
 
-               
+.form-line { margin-bottom: 15px;}
+.form-line label { vertical-align: top; position: relative; top: 6px; margin-right: 10px; font: normal 12px/1 "Open Sans"; color: rgb( 152, 152, 152 ); }                                
+.form-line input[type=text] { width: 198px; height: 24px; line-height: 24px; border: 1px solid #d4d4d4; padding: 0 10px;}
+.form-line textarea { width: 198px; height: 100px; line-height: 18px; padding: 5px 10px; border: 1px solid #d4d4d4; font: normal 13px/18px Arial; }
+        
+.address-box, 
+.address-box a { font: normal 12px/16px "Open Sans"; color: rgb( 152, 152, 152 ); }
+        
+.button.small.color { font: normal 14px/1 "Open Sans"; color: rgb( 86, 86, 86 ); border: 1px solid #d4d4d4; border-radius: 4px; margin: 10px 0 0 0; padding: 5px 25px; 
+                        background: #f8f8f8;
+                        background: -moz-linear-gradient(top,  #f8f8f8 0%, #ededed 100%);
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#ededed));
+                        background: -webkit-linear-gradient(top,  #f8f8f8 0%,#ededed 100%);
+                        background: -o-linear-gradient(top,  #f8f8f8 0%,#ededed 100%);
+                        background: -ms-linear-gradient(top,  #f8f8f8 0%,#ededed 100%);
+                        background: linear-gradient(to bottom,  #f8f8f8 0%,#ededed 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#ededed',GradientType=0 ); }
+                              
+.button.small.color:hover { background: -moz-linear-gradient(top,  #ededed 0%, #f8f8f8 100%);
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#f8f8f8));
+                            background: -webkit-linear-gradient(top,  #ededed 0%,#f8f8f8 100%);
+                            background: -o-linear-gradient(top,  #ededed 0%,#f8f8f8 100%);
+                            background: -ms-linear-gradient(top,  #ededed 0%,#f8f8f8 100%);
+                            background: linear-gradient(to bottom,  #ededed 0%,#f8f8f8 100%);
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#f8f8f8',GradientType=0 ); }                              
+                              
+.top-6 { margin-top: 70px; }
+.bottom-6 { margin-bottom: 70px; }
