@@ -64,3 +64,8 @@ header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
                               
 .top-6 { margin-top: 70px; }
 .bottom-6 { margin-bottom: 70px; }
+
+.alert { font: normal 12px/18px 'Open Sans'; margin-top: 30px; margin-bottom: -30px; padding-left: 40px; position: relative; }
+.alert .icon-warning-sign,
+.alert .icon-check, 
+.alert .icon-info-sign { position: absolute; top: 13px; left: 13px; }

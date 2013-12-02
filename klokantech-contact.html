@@ -25,12 +25,9 @@
     <![endif]-->
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/favicon.ico">
-    
-    <style type="text/css">
 
 
-
-    </style>
+        
 </head>
 <body>
     <div id="wrap" class="boxed">
@@ -98,13 +95,14 @@
         
         <!-- <<< End Header >>> -->        
         <!-- Start main content -->
+
+        <div class="container">
+            <div id="note"></div>
+        </div>
+
+
         <div class="container main-content clearfix">
-            <div class="eight columns top-6 bottom-6" style="text-align: right;">
-                <!--<p>                    
-                    <div id="note"></div><br />
-                </p>-->
-                <!-- End notification -->
-                
+            <div class="eight columns top-6 bottom-6" style="text-align: right;">                                                                    
                 <form id="ajax-contact-form" action="">
                     <div class="form-line">
                         <label>Name</label>
@@ -221,20 +219,15 @@
         jQuery(document).ready(function ($) {
             $("#ajax-contact-form").submit(function () {
                 var str = $(this).serialize();
+                
+                $('#note').html('<div class="alert info hideit"><i class="icon-info-sign"></i><p>Processing contact form, please wait... </p></div>');
+
                 $.ajax({
                     type: "POST",
                     url: "inc/contact-process.php",
                     data: str,
-                    success: function (msg) {
-                        // Message Sent? Show the 'Thank You' message and hide the form
-                        if (msg == 'OK') {
-                            result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
-                            $("#fields").hide();
-                            setTimeout("location.reload(true);", 7000);
-                        } else {
-                            result = msg;
-                        }
-                        $('#note').html(result);
+                    success: function (msg) {                        
+                        $('#note').html(msg);
                     }
                 });
                 return false;

@@ -1,10 +1,8 @@
 <?php
 /*
 Credits: Bit Repository
-URL: http://www.bitrepository.com/
-*/
-
-include dirname(dirname(__FILE__)).'/config.php';
+URL: http:/w/ww.bitrepository.com/
+ */
 
 error_reporting (E_ALL ^ E_NOTICE);
 
@@ -12,62 +10,60 @@ $post = (!empty($_POST)) ? true : false;
 
 if($post)
 {
-include 'functions.php';
+    include 'functions.php';
 
-$name = stripslashes($_POST['name']);
-$email = trim($_POST['email']);
-$subject = stripslashes($_POST['subject']);
-$message = stripslashes($_POST['message']);
+    $name = stripslashes($_POST['name']);
+    $email = trim($_POST['email']);
+    $message = stripslashes($_POST['message']);
 
+    $error = '';
 
-$error = '';
+    // Check name
+    if(!$name) { $error .= 'Please enter your name.<br />'; }
 
-// Check name
+    // Check email
+    if(!$email) { $error .= 'Please enter an e-mail address.<br />'; }
+    if($email && !ValidateEmail($email)) { $error .= 'Please enter a valid e-mail address.<br />'; }
 
-if(!$name)
-{
-$error .= 'Please enter your name.<br />';
-}
+    // Check message (length)
+    if(!$message || strlen($message) < 15) { $error .= "Please enter your message. It should have at least 15 characters.<br />"; }
 
-// Check email
+    if(!$error)
+    {
+        include("class.phpmailer.php");
 
-if(!$email)
-{
-$error .= 'Please enter an e-mail address.<br />';
-}
+        $mail = new PHPMailer();
+        $email_address = $mail->SecureHeader($_POST['frommail']);
 
-if($email && !ValidateEmail($email))
-{
-$error .= 'Please enter a valid e-mail address.<br />';
-}
+        $mail->CharSet = "utf-8";
+        $mail->IsSMTP();
+        $mail->SMTPAuth   = true;                  // enable SMTP authentication
+        $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
+        $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+        $mail->Port       = 465;                   // set the SMTP port
+        $mail->Username   = "info@klokantech.com"; // GMAIL username
+        $mail->Password   = "";           // GMAIL password
 
-// Check message (length)
+        $mail->SetFrom("info@klokantech.com");
+        $mail->AddReplyTo($email, $name);
+        $mail->AddAddress("info@klokantech.com", "Klokantech");
 
-if(!$message || strlen($message) < 15)
-{
-$error .= "Please enter your message. It should have at least 15 characters.<br />";
-}
+        $mail->Subject = "Contact from the web form - " . $email;
 
-
-if(!$error)
-{
-ini_set("sendmail_from", WEBMASTER_EMAIL); // for windows server
-$mail = mail(WEBMASTER_EMAIL, $subject, $message,
-     "From: ".$name." <".$email.">\r\n"
-    ."Reply-To: ".$email."\r\n"
-    ."X-Mailer: PHP/" . phpversion());
-
-
-if($mail)
-{
-echo 'OK';
-}
-
-}
-else
-{
-echo '<div class="notification_error">'.$error.'</div>';
-}
-
+        $mail->Body = $message;
+        
+        if(!$mail->Send())
+        {
+            echo '<div class="alert error hideit"><i class="icon-warning-sign"></i>'.$mail->ErrorInfo.'</div>';
+        }
+        else
+        {
+            echo '<div class="alert success hideit"><i class="icon-check"></i>Message sent!</div>';
+        }
+    }
+    else
+    {
+        echo '<div class="alert error hideit"><i class="icon-warning-sign"></i>'.$error.'</div>';
+    }
 }
 ?>
