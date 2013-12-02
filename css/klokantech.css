@@ -19,7 +19,7 @@ header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
 .services { margin-bottom: 82px;}
 .services .column { margin-bottom: 39px; }
 .services .item { margin: 0 25px; }
-.services .product_logo { margin: -4px 35px 35px 0;}
+.services .product_logo { margin: -4px 35px 35px 0; height: 65px; width: 65px; }
 .services h3,
 .services h3 a { font: 400 18px/22px 'Open Sans'; color: #3c3c3c; }
 .services p { font: 400 12px/15px 'Open Sans'; color: #989898; margin-bottom: 27px;}
