@@ -24,13 +24,15 @@ header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
 .services h3 a { font: 400 18px/22px 'Open Sans'; color: #3c3c3c; }
 .services p { font: 400 12px/15px 'Open Sans'; color: #989898; margin-bottom: 27px;}
 .services a { font: 400 12px/15px 'Open Sans'; color: #535353; }
-.services a.linkBlue { color: #00549a; text-decoration: underline; }
-.services a:hover { text-decoration: none; }
+.services a.linkBlue {  }
+.services a:hover { color: #00549a; text-decoration: underline; }
         
 .oldmaponline { margin-bottom: 70px; }
 .oldmaponline h3 { font: 400 24px/1 'Open Sans'; margin: 2px 0 17px 0;}
 .oldmaponline p { border-bottom: 1px solid #ece9e0; margin-left: 260px; padding-bottom: 21px; margin-bottom: 12px; line-height: 20px; }
 .oldmaponline a { float: right; margin-top: 12px; font: 400 12px/15px 'Open Sans'; color: #535353; }
+/*.oldmaponline a:hover { color: #00549a; text-decoration: underline; }*/
+
 .oldmaponline .logo_oldmaps { position: relative; top: -1px; left: -2px;}
  
 .footer-down { padding: 15px 0; background: White; border-top: 1px solid #eae6e2; color: #989898; font-size: 11px; }
