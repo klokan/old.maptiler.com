@@ -551,29 +551,30 @@
 
             <div class="eight columns bottom-2">
                 <div id="fields clearfix">
-                    <form action="#" class="form-elements">
+                    <form action="#" class="form-elements" id="ajax-contact-form">
+                    <div id="note"></div>
                     <fieldset>
                         <span>Name : </span>
-                        <input type="text" name="text" value="" />
+                        <input type="text" name="name" value="" />
                     </fieldset>
                     <fieldset>
                         <span>Email : </span>
-                        <input type="text" name="text" value="" />
+                        <input type="text" name="email" value="" />
                     </fieldset>
                     <fieldset>
                         <span>Company : </span>
-                        <input type="text" name="text" value="" />
+                        <input type="text" name="company" value="" />
                     </fieldset>
                     <fieldset>
                         <span style="vertical-align: top; position: relative; top: 15px;">Address: </span>
-                        <textarea name="textarea"></textarea>
+                        <textarea name="address"></textarea>
                     </fieldset>                                
                     <fieldset>
                         <span>System : </span>
-                        <select name="select">
-                            <option>Microsoft Windows</option>
-                            <option>Mac OSX</option>
-                            <option>Linux</option>
+                        <select name="operatingsystem">
+                            <option value="Microsoft Windows">Microsoft Windows</option>
+                            <option value="Mac OSX">Mac OSX</option>
+                            <option value="Linux">Linux</option>
                         </select>
                     </fieldset>
                 
@@ -952,15 +953,33 @@
 
             $('#requestDemo').click(function (e) {
                 e.preventDefault();
-                $('#requestDemoForm').slideDown("slow");
+                $('#requestDemoForm').slideDown("slow");                
                 $('html, body').animate({
                     scrollTop: ($("#requestDemoForm").offset().top - 100)
                 }, 1000);
             });
             $('#requestDemoForm input[type=reset]').click(function (e) { $('#requestDemoForm').slideUp(); });
 
+            // Contactform functions
+            $("#ajax-contact-form").submit(function () {
+                var str = $(this).serialize();
+
+                $('#note').html('<div class="alert info hideit"><i class="icon-info-sign"></i><p>Processing contact form, please wait... </p></div>');
+
+                $.ajax({
+                    type: "POST",
+                    url: "inc/contact-maptiler.php",
+                    data: str,
+                    success: function (msg) {
+                        $('#note').html(msg);
+                    }
+                });
+                return false;
+            });
+
         });
     </script>
+
     <!-- End onepage js -->
     <script src="js/custom.js"></script>
     <!-- Custom Js file for javascript in html -->
