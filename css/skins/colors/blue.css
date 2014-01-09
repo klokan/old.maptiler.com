@@ -55,8 +55,12 @@ p a, a:hover, .latest-blog .item h3 a:hover, .tweet_list li i.icon-twitter, .twe
 	border-left:2px solid #378ac4;
 }
 
-header.style-3 .navigation ul li a:hover, header.style-3 .navigation ul li a.selected, header.style-3 .navigation ul li.active a {
-	border-top:1px solid transparent;
-	background: #00549a;
-	color: #ededed;
+header.style-3 .navigation ul li a.selected, header.style-3 .navigation ul li.active a {
+	border-top:1px solid White;
+	background: #00549a;	
+}
+
+header.style-3 .navigation ul li a:hover {
+	border-top:1px solid White;
+	background: #ededed;	
 }
