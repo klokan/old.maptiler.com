@@ -49,14 +49,14 @@ if($post)
         $mail->Username   = "info@klokantech.com"; // GMAIL username
         $mail->Password   = "";           // GMAIL password
 
-        $mail->SetFrom("info@klokantech.com");
-        $mail->AddReplyTo($email, $name);
-        //$mail->AddAddress("info@klokantech.com", "Klokantech");
-        $mail->AddAddress("robert@solarik.com", "Robert Solarik");
+        $mail->SetFrom("info@klokantech.com", "Klokan Technologies GmbH");
+        // $mail->AddReplyTo($email, $name);
+        $mail->AddAddress($email, $name);
+        $mail->AddCC("info@klokantech.com", "Klokan Technologies GmbH");
 
-        $mail->Subject = "Contact from the web form - " . $name . " " . $company;
+        $mail->Subject = "MapTiler Pro demo request - " . $name . ", " . $company;
 
-        $mail->Body = "Operating system: " . $operatingsystem . "\n\n" . $address;
+        $mail->Body = "Dear ".$name . ",\n\nyou have requested a demo version of MapTiler Pro for operating system: " . $operatingsystem . ".\n". "This is a confirmation, that we have received your request and will get in touch with you shortly.\n\nYour credentials:\n" . $name . "\n" . $company . "\n" . $address . "\n\nHave a nice day \n\nKlokan Technologies GmbH";
         
         if(!$mail->Send())
         {
