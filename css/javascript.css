@@ -36,7 +36,7 @@
 }
 
 header.style-3 .navigation ul li {
-	margin-right:4px;
+	margin-right:0;
 	margin-left:0;
 }
 
@@ -47,7 +47,7 @@ header.style-3 .navigation ul li {
 }
 
 header.style-3 .navigation ul li a {
-	padding: 28px 20px 22px 20px;
+	padding: 10px 15px;
 }
 
 * html .navigation ul li a{ /*IE6 hack to get sub menu links to behave correctly*/

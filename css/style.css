@@ -174,7 +174,7 @@ header.style-3.style-5 .navigation > #nav {
 }
 
 header.style-3.style-5 .down-header {
-	min-height:66px;
+	min-height: 34px;
 }
 
 /* header sticky fixed */
@@ -948,7 +948,7 @@ html.ie.ie8 .comments .comment-box .avatar img {
 .form-box textarea {
 	width:96.6%;
 	padding:12px 10px;
-	min-height:180px;
+	min-height:142px;
 	display:block;
 	border:none;
 }
@@ -966,33 +966,30 @@ html.ie.ie8 .comments .comment-box .avatar img {
 }
 
 /* contact info */
-.address-info li, .phone-info li, .email-info li {
-	padding:5px 5px 5px 18px;
-	line-height:25px;
+.address-info li, .phone-info li, .email-info li, .registration-info li {
+	padding:5px 5px 5px 35px;
+	line-height: 20px;
 	position: relative;
-}
-
-.phone-info li {
-	padding-left:22px;
-}
-
-.email-info li {
-	padding-left:26px;
 }
 
 .address-info li:before {
 	content: '\f041'; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;
-    font-size: 20px; position: absolute; top: 5px; left: 0;
+    font-size: 20px; position: absolute; top: 5px; left: 0; width: 25px; text-align: center;
 }
 
 .phone-info li:before {
 	content: '\f095'; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;
-    font-size: 17px; position: absolute; top: 5px; left: 0;
+    font-size: 17px; position: absolute; top: 5px; left: 0;width: 25px; text-align: center;
 }
 
 .email-info li:before {
 	content: '\f0e0'; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;
-    font-size: 17px; position: absolute; top: 5px; left: 0;
+    font-size: 17px; position: absolute; top: 5px; left: 0;width: 25px; text-align: center;
+}
+
+.registration-info li:before {
+	content: '\f129'; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;
+    font-size: 17px; position: absolute; top: 5px; left: 0;width: 25px; text-align: center;
 }
 
 /* Under Construction */
@@ -1174,6 +1171,11 @@ header.style-3 #menu > ul {
 	right: 15%;
 	top: 51px;
 }
+
+header.style-3.style-5 .navigation > #nav {	
+	display: none;
+}
+
 
 #menu > ul > li {
 	width: 100%;

@@ -529,9 +529,9 @@ loop : false
 
 /* header fixed with sticky plugin */
 $("header.fixed .main-header").sticky({ topSpacing: 0 });
-/* this for header 3 and 5
-$("header.fixed .down-header").sticky({ topSpacing: 0 });
-*/
+/* this for header 3 and 5 */
+$("header.fixed .down-header").sticky({ topSpacing: 140 });
+
 $('.sticky-wrapper').removeAttr('style');
 								
 });

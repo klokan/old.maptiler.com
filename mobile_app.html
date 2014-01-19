@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>MapTiler for Developers - Create own mobile app</title>
+    <meta name="description" content="Invention Theme for corporate and creative sites, responsive and clean layout, more than color skins">
+    <meta name="author" content="Jozoor team">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Color Style -->
+    <link rel="stylesheet" href="css/skins/colors/blue.css" name="colors">
+    <!-- Layout Style -->
+    <link rel="stylesheet" href="css/layout/wide.css" name="layout">
+    <!-- Style Switcher Box -->
+    <link rel="stylesheet" href="css/switcher/style.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+  <![endif]-->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style type="text/css">
+        ol.orderedList { padding-left: 25px; }
+        ol.orderedList li { line-height: 23px; list-style-type: decimal; }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="boxed">
+        <header class="fixed" id="home">
+            <div class="top-bar">
+                <div class="container clearfix">
+                    <div class="slidedown">
+                        <div class="eight columns">
+                            <div class="phone-mail" style="padding-top: 8px;">
+                                <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a>
+                            </div>
+                            <!-- End phone-mail -->
+                        </div>
+                        <div class="eight columns">
+                            <div class="social">
+                                MapTiler News: <a href="https://plus.google.com/112524594087395104243" rel="publisher"><i class="social_icon-gplus s-18"></i></a><a href="https://twitter.com/klokantech"><i class="social_icon-twitter s-14"></i></a><a href="https://www.facebook.com/maptiler"><i class="social_icon-facebook s-18"></i></a>
+                            </div>
+                        </div>
+                        <!-- End social-icons -->
+                    </div>
+                    <!-- End slidedown -->
+                </div>
+                <!-- End Container -->
+            </div>
+            <!-- End top-bar -->
+            <div class="main-header">
+                <div class="container clearfix">
+                    <a href="#" class="down-button"><i class="icon-angle-down"></i></a>
+                    <!-- this appear on small devices -->
+                    <div class="one-third column">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="images/logo.png" alt="MapTiler" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Logo -->
+                    <div class="two-thirds column">
+                        <nav id="menu" class="navigation" role="navigation">
+                            <a href="#">Show navigation</a><!-- this appear on small devices -->
+                            <ul id="nav">
+                                <!-- <li class="active"><a href="#home">Home</a></li> -->
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#developers">Developers</a></li>
+                                <!-- 
+            <li><a href="#portfolio">References</a></li>
+            <li><a href="#about">Pages</a></li>
+            <li><a href="#contact">Contact</a></li>
+            -->
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Menu -->
+                </div>
+                <!-- End Container -->
+            </div>
+            <!-- End main-header -->
+        </header><!-- <<< End Header >>> -->
+        <div class="page-title">
+            <div class="container clearfix">
+                <div class="sixteen columns">
+                    <h1>
+                        Create own mobile app</h1>
+                </div>
+            </div>
+            <!-- End Container -->
+        </div>
+        <!-- End Page title -->
+        <!-- Start main content -->
+        <div class="container main-content clearfix">
+            <div class="sixteen columns bottom-3">
+                <div class="welcome">
+                    <p>
+                        A straight-forward way, how to create mobile apps usings maps rendered with MapTiler
+                    </p>
+                </div>
+            </div>
+            <!-- End column -->
+            <div class="page-columns">
+                <!-- section 1/2 Column -->
+                <div class="eight columns bottom-4">
+                    <h3 class="title">Objective-C</h3>
+                    <p>
+                        For users of Objective-C for the development of a native iOS or Android application we have a ready-to-use free source code at:<br />
+                        <a href="https://github.com/klokantech/maptiler-ios-start ">https://github.com/klokantech/maptiler-ios-start</a><br />
+                        <br />
+                    </p>
+                    <p>
+                        <strong>Follow these steps:</strong>
+                    </p>
+                    <ol class="orderedList">
+                        <li>Download the ZIP file</li>
+                        <li>Drop in MBTiles file rendered with MapTiler Pro</li>
+                        <li>Open in Xcode</li>
+                        <li>Compile </li>
+                    </ol>
+                    <br />
+                    <p>
+                        A distributable native <strong>app for iPhone/iPad is ready</strong>. Users can view and zoom the map and see their actual position.
+                    </p>
+                </div>
+                <div class="eight columns bottom-4">
+                    <h3 class="title">JavaScript</h3>
+                    <p>
+                        For users of JavaScript for the development, then for native-like mobile apps is ideal jQuery Mobile:
+                        <br>
+                        <a href="http://jquery-ui-map.googlecode.com/svn/trunk/demos/jquery-google-maps-mobile.html">http://jquery-ui-map.googlecode.com/svn/trunk/demos/jquery-google-maps-mobile.html</a>
+                        <br>
+                        or Sencha touch:<br>
+                        <a href="http://dev.sencha.com/deploy/touch/examples/production/map/">http://dev.sencha.com/deploy/touch/examples/production/map/</a>
+                        <br>
+                        <br>
+                        The web app can be packed into a native mobile application for distribution via Apple AppStore / Google Play with <a href="http://phonegap.com/">http://phonegap.com/</a>.
+                    </p>
+                </div>
+                <!-- End  -->
+                <div class="sixteen columns clearfix">
+                    <hr class="line bottom-3">
+                </div>
+                <!-- End line -->
+                <!-- section 16 Columns -->
+                <div class="sixteen columns bottom-4">
+                    <h3 class="title">Development from creators of Maptiler</h3>
+                    <p>
+                        Klokan technologies offers assist with the development of mobile apps, test your data and suggest ideal workflow. It is possible to order the development of the app by us as well. Our standard hour rate is 150 CHF.
+                    </p>
+                </div>
+                <!-- End  -->
+            </div>
+            <!-- End page-columns -->
+        </div>
+        <!-- <<< End Container >>> -->
+        <footer>
+            <!--
+     <div class="footer-top">
+      <div class="container clearfix">
+        
+        <div class="one-third column widget">
+          <h3 class="title">Latest News</h3>
+          <div id="tweets-footer" class='tweet query footer'></div>
+        </div>
+        
+        <div class="one-third column widget">
+          <h3 class="title">Flickr Stream</h3>
+          <ul id="footer" class="thumbs"></ul>
+        </div>
+        
+        <div class="one-third column widget">
+          <div class="subscribe"> 
+          <h3 class="title">Subscribe</h3>
+          <p>Subscribe to our email newsletter to receive our news, updates and awesome free files, tuts and sources .</p>
+          <form action="#">
+            <input type="text" class="mail" value="your@email.com" onBlur="if(this.value == '') { this.value = 'your@email.com'; }" 
+            onfocus="if(this.value == 'your@email.com') { this.value = ''; }"/>
+            <input type="submit" value="Subscribe" class="submit" />
+          </form>
+          </div>
+        </div>
+        
+      </div>
+     </div>  -->
+            <div class="footer-down">
+                <div class="container clearfix">
+                    <div class="eight columns">
+                        <span class="copyright">© Copyright 2013 <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a>. All Rights Reserved.</span>
+                    </div>
+                    <!-- End copyright -->
+                    <div class="eight columns">
+                        <div class="social">
+                            MapTiler News: <a href="https://plus.google.com/112524594087395104243" rel="publisher"><i class="social_icon-gplus s-18"></i></a><a href="https://twitter.com/klokantech"><i class="social_icon-twitter s-14"></i></a><a href="https://www.facebook.com/maptiler"><i class="social_icon-facebook s-18"></i></a>
+                        </div>
+                    </div>
+                    <!-- End social icons -->
+                </div>
+                <!-- End container -->
+            </div>
+            <!-- End footer-top -->
+        </footer><!-- <<< End Footer >>> -->
+    </div>
+    <!-- End wrap -->
+    <!-- Start JavaScript -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- jQuery library -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery-ui/jquery.ui.core.js"></script>
+    <!-- jQuery Ui Core-->
+    <script src="js/jquery-ui/jquery.ui.widget.js"></script>
+    <!-- jQuery Ui Widget -->
+    <script src="js/jquery-ui/jquery.ui.accordion.js"></script>
+    <!-- jQuery Ui accordion-->
+    <script src="js/jquery-cookie.js"></script>
+    <!-- jQuery cookie -->
+    <script src="js/ddsmoothmenu.js"></script>
+    <!-- Nav Menu ddsmoothmenu -->
+    <script src="js/jquery.flexslider.js"></script>
+    <!-- Flex Slider  -->
+    <script src="js/colortip.js"></script>
+    <!-- Colortip Tooltip Plugin  -->
+    <script src="js/tytabs.js"></script>
+    <!-- jQuery Plugin tytabs  -->
+    <script src="js/jquery.ui.totop.js"></script>
+    <!-- UItoTop plugin  -->
+    <script src="js/carousel.js"></script>
+    <!-- jQuery Carousel  -->
+    <script src="js/jquery.isotope.min.js"></script>
+    <!-- Isotope Filtering  -->
+    <script src="js/twitter/jquery.tweet.js"></script>
+    <!-- jQuery Tweets -->
+    <script src="js/jflickrfeed.min.js"></script>
+    <!-- jQuery Flickr -->
+    <script src="js/social-options.js"></script>
+    <!-- social options , twitter, flickr.. -->
+    <script src="js/doubletaptogo.js"></script>
+    <!-- Touch-friendly Script  -->
+    <script src="js/fancybox/jquery.fancybox.js"></script>
+    <!-- jQuery FancyBox -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- jQuery Sticky -->
+    <script src="js/custom.js"></script>
+    <!-- Custom Js file for javascript in html -->
+    <!-- End JavaScript -->
+</body>
+</html>

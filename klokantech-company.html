@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -25,9 +25,27 @@
       <script src="js/html5.js"></script>
     <![endif]-->
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico">        
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <style type="text/css">
+
+      .services h3 { font-size: 24px; font-family: "Open Sans";  color: rgb( 57, 57, 57 ); margin-bottom: 21px;}
+      .services p { font-size: 12px; font-family: "Open Sans"; color: rgb( 152, 152, 152 ); line-height: 1.667; text-align: justify; }
+      
+      .services .item { margin: 0 25px; }
+      .services .item.first { margin: 0 50px 0 0; }
+      .services .item.last { margin: 0 0 0 50px; }
+      
+      @media only screen and (max-width: 767px) {
+          .services .item { margin: 0 !important; }
+          
+          }
+
+        
+    </style>
+
 </head>
-<body class="homepage">
+<body>
     <div id="wrap" class="boxed">
         <header class="style-3 style-5" id="home">
             <div class="top-bar">
@@ -79,7 +97,7 @@
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="#">References</a></li>
                                 <li><a href="#">Open source</a></li>
-                                <li><a href="klokantech-company.html">Company</a></li>
+                                <li class="active"><a href="klokantech-company.html">Company</a></li>
                                 <li><a href="klokantech-contact.html">Contact</a></li>
                             </ul>
                         </nav>
@@ -90,89 +108,55 @@
             </div>
             <!-- End main-header -->
         </header><!-- <<< End Header >>> -->
+
         <!-- ======================== Start welcome ======================== -->
         <div class="one-page">
             <div class="container clearfix">
-                <div class="sixteen columns bottom-2" style="border-bottom: 1px solid #e6e6e6; ">
+                <div class="sixteen columns" style="margin-bottom: 25px;">
                     <h1 class="title">
-                        Maps for People. Online.</h1>
-                    <p class="description">
-                        Klokan Technologies GmbH is a Swiss company specialized in online <br />
-                        map publishing, geographic information retrieval and applications of <br />
-                        open-source software for the culture heritage sector.
-                    </p>
-                    <!--
-        <center><a href="#" class="button large color">
-        <i class="social_icon-appstore s-30 white"></i> &nbsp; Download On App Store</a></center>
-        -->
+                        Maps for People. Online.</h1>                                           
                 </div>
             </div>
             <!-- End Container -->
         </div>
         <!-- End welcome -->
         <!-- ======================== End ======================== -->
-        <div class="services">
-            <div class="container clearfix" style="border-bottom: 1px solid #e6e6e6;">
+
+
+        <div class="services bottom-3">
+            <div class="container clearfix">
                 <div class="one-third column">
-                    <div class="item">
-                        <div class="float-left">
-                            <a href="http://www.maptiler.com">
-                                <img src="images/klokantech/logo_maptiler.png" class="product_logo" /></a>
-                        </div>
-                        <h3><a href="http://www.maptiler.com">MapTiler</a></h3>
+                    <div class="item first">                                                                        
+                        <h3>Maps</h3>
                         <p>
-                            Fast maps for the web and mobile.</p>
-                        <a href="http://www.maptiler.com" class="linkBlue">www.maptiler.com</a>
-                    </div>
-                </div>
-                <!-- End item -->               
-                <div class="one-third column">
-                    <div class="item">
-                        <div class="float-left">
-                            <a href="http://www.georeferencer.com">
-                                <img src="images/klokantech/logo_georeferencer.png" class="product_logo" /></a>
-                        </div>
-                        <h3><a href="http://www.georeferencer.com">Georeferencer</a></h3>
-                        <p>
-                            Turn an Image to a map in seconds.</p>
-                        <a href="http://www.georeferencer.com" class="linkBlue">www.georeferencer.com</a>
+                            Klokan Technologies GmbH was founded in 2010 as a result of almost 10 years of freelance activities of its managing director, Petr Pridal, in the field of online mapping technologies. As an active participant of conferences worldwide, Petr established a network of partners and customers, who share our beliefs in importance of widely accessible culture heritage and maps.</p>
                     </div>
                 </div>
                 <!-- End item -->
-                 <div class="one-third column">
-                    <div class="item">
-                        <div class="float-left">
-                            <a href="http://www.mapranksearch.com">
-                                <img src="images/klokantech/logo_mapranksearch.png" class="product_logo" /></a>
-                        </div>
-                        <h3><a href="http://www.mapranksearch.com">MapRank Search</a></h3>
+                <div class="one-third column">
+                    <div class="item">                                                
+                        <h3>Vision</h3>
                         <p>
-                            Explore thousands of maps in time.</p>
-                        <a href="http://www.mapranksearch.com" class="linkBlue">www.mapranksearch.com</a>
+                            To connect cartographic past with today’s reality is a path on which we set, building on open-source technologies combined with custom development. A vision for personal use of maps by individuals and growing importance of mobile technologies drives us to create easy-to-use software for end users that combine computing power of their devices with simplicity of use.</p>
+                    </div>
+                </div>
+                <!-- End item -->
+                <div class="one-third column">
+                    <div class="item last">                                                
+                        <h3>Online</h3>
+                        <p>
+                            The company is privately held with headquarters and the main office in Baar, Switzerland. Second office and a part of the development team are located in Brno, Czech republic. Currently, eight people work for the company and the team actively participates on various research projects internationally and grows with new accepted contracts.</p>
                     </div>
                 </div>
                 <!-- End item -->
             </div>
             <!-- End Container -->
         </div>
-        <!-- End services -->
-
-        <div class="oldmaponline">
-                <div class="container clearfix">
-                    <img src="images/klokantech/screenshot_oldmaps.jpg" class="float-left" style="margin-right: 40px;" />
-                    <h3>Discover the Cartography of the past</h3>
-                    <p>
-                        Klokantech GmbH is a Swiss company specialized in online map publishing, geographic information retrieval and application of open-source software for the cultural heritage sector.
-                    </p>
-                    <img src="images/klokantech/logo_oldmaps.png" class="logo_oldmaps" />
-                    <a href="http://www.OldMapsOnline.org">
-                        www.OldMapsOnline.org
-                    </a>
-                </div>                
-            </div>
-
+        <!-- End services -->  
     </div>
     <!-- End Container -->
+
+
     <footer>
         <div class="footer-down">
             <div class="container clearfix">
