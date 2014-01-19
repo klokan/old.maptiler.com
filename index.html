@@ -161,7 +161,7 @@
                         <!-- <a href="">Windows</a> /  -->
                         <p>
                             <a href="http://itun.es/ch/jFlyJ.m">Download for Mac OS X 10.7+ on App Store</a><p>
-                                <a href="http://www.klokantech.com/contact/">Request demo for Linux</a>
+                                <a href="http://www.klokantech.com/contact/" class="requestDemo">Request demo for Linux</a>
                     </div>
                     <div class="social-share">
                         <p>
@@ -529,7 +529,7 @@
                 </div>
                 <div class="footer">
                     <h4>
-                        <a href="http://www.klokantech.com/contact/" id="requestDemo">Request a demo</a></h4>
+                        <a href="http://www.klokantech.com/contact/" class="requestDemo">Request a demo</a></h4>
                     <p>
                     &nbsp;
                 </div>
@@ -951,7 +951,7 @@
             });
 
 
-            $('#requestDemo').click(function (e) {
+            $('.requestDemo').click(function (e) {
                 e.preventDefault();
                 $('#requestDemoForm').slideDown("slow");                
                 $('html, body').animate({
