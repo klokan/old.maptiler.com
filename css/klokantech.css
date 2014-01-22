@@ -1,11 +1,19 @@
 ﻿.padding-0-40 { padding: 0 40px;}
-.top-bar { background-color: White; border-bottom: 1px solid #e6e6e6; color: #858889; } 
+.top-bar { background-color: White; border-bottom: 1px solid #e6e6e6; color: #858889; display: none; } 
 .top-bar a, header .social a { color: #858889; }
 header .social a:hover, header .social a:hover, .phone-mail a:hover { color: #adafb0; }
 .phone-mail { padding-top: 7px;}                        
+
 .social { padding-top: 5px; }
 .social a { display: inline-block; margin: 0 0 0 14px; }                                
-        
+
+.social2 { text-align: center; margin-bottom: 40px; }
+.social2 a { border: 1px solid #ededed; border-radius: 5px; padding: 0px 10px 0 7px; color: #989898; display: inline-block; height: 25px; vertical-align: top; line-height: 23px;}
+.social2 i { border-right: 1px solid #ededed; width: 16px; text-align: center; display: inline-block; height: 25px; line-height: 25px; padding: 0 7px 0 0; margin-right: 5px; }
+.social2 i.social_icon-facebook { color: #015fb7;}
+.social2 i.social_icon-twitter { color: #00a9d7; line-height: 23px;}
+.social2 i.social_icon-gplus { color: #cb0000;}
+       
 .logo img { height: 77px; min-height: 77px; max-height: 77px; width: auto; margin: 17px 0 19px; }
 .main-header { border-bottom: 0; }
 header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
@@ -14,7 +22,7 @@ header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
         
 .one-page { margin-bottom: 24px; }
 .one-page h1.title { font: 400 30px/1 'Open Sans'; margin: 65px 0 23px; color: #393939; }
-.one-page p.description { color: #989898; font: 400 14px/20px 'Open Sans'; margin-bottom: 77px;}
+.one-page p.description { color: #989898; font: 400 14px/20px 'Open Sans'; margin-bottom: 37px;}
         
 .services { margin-bottom: 82px;}
 .services .column { margin-bottom: 39px; }
