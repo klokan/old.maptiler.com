@@ -676,6 +676,10 @@ aside ul li { list-style: square; }
 			});		
 		});		
     </script>
+<style>
+#navbar { display: none !important; }
+#navbar-iframe { display: none !important; }
+</style>
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -727,7 +731,7 @@ aside ul li { list-style: square; }
                             <a href='#'>Show navigation</a><!-- this appear on small devices -->
                             <ul id='nav'>
                                 <li><a href='http://klokantech.com'>Home</a></li>
-                                <li  class="active"><a href='http://blog.klokantech.com/'>Blog</a></li>
+                                <li><a href='http://blog.klokantech.com/'>Blog</a></li>
                                 <li><a href='http://blog.klokantech.com/search/label/customers'>References</a></li>
                                 <li><a href='http://blog.klokantech.com/search/label/open-source'>Open source</a></li>
                                 <li><a href='http://klokantech.com/company/'>Company</a></li>
@@ -1351,8 +1355,8 @@ head.appendChild(script);
 
         <div class='mobile-index-contents'>
           <b:if cond='data:post.thumbnailUrl'>
-            <div class='mobile-index-thumbnail' style="float: left; padding-top: 5px; padding-right: 10px">
-              <div class='Image' >
+            <div class='mobile-index-thumbnail' style='float: left; padding-top: 5px; padding-right: 10px'>
+              <div class='Image'>
                 <img expr:src='data:post.thumbnailUrl'/>
               </div>
             </div>
@@ -2057,7 +2061,7 @@ head.appendChild(script);
                 </div>
                 <!-- End copyright -->
                 <div class='eight columns align-right'>                    
-                  <a href='http://klokantech.com/contact/' style='color: #989898'>info&#064;kloka<!--@-->ntech.com</a>                    
+                  <a href='http://klokantech.com/contact/' style='color: #989898'>info@kloka<!--@-->ntech.com</a>                    
                 </div>
                 <!-- End phone -->
             </div>
@@ -2125,45 +2129,6 @@ head.appendChild(script);
         window.___gcfg = {&#39;lang&#39;: &#39;<data:language/>&#39;};
       </script>
     </b:if>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='Label1' locked='false' title='Labels' type='Label'>
-    <b:includable id='main'>
-  <b:if cond='data:title'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-      <ul>
-      <b:loop values='data:labels' var='label'>
-        <li>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </li>
-      </b:loop>
-      </ul>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
   </div>
 </b:includable>
   </b:widget>
@@ -2241,6 +2206,58 @@ head.appendChild(script);
 
     <b:include name='quickedit'/>
   </b:includable>
+  </b:widget>
+  <b:widget id='HTML2' locked='false' title='RSS / Atom' type='HTML'>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Label1' locked='false' title='Labels' type='Label'>
+    <b:includable id='main'>
+  <b:if cond='data:title'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+      <b:loop values='data:labels' var='label'>
+        <li>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </li>
+      </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
   </b:widget>
   <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
     <b:includable id='main'>
@@ -2325,47 +2342,17 @@ head.appendChild(script);
  </b:if>
 </b:includable>
   </b:widget>
-  <b:widget id='Profile1' locked='false' title='About Me' type='Profile'>
+  <b:widget id='Text1' locked='false' title='Have a look at' type='Text'>
     <b:includable id='main'>
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2><data:title/></h2>
-    </b:if>
-    <div class='widget-content'>
-    <b:if cond='data:team == &quot;true&quot;'> <!-- team blog profile -->
-      <ul>
-        <b:loop values='data:authors' var='i'>
-          <li><a class='profile-name-link g-profile' expr:href='data:i.userUrl' expr:style='&quot;background-image: url(&quot; + data:i.profileLogo + &quot;);&quot;'><data:i.display-name/></a></li>
-        </b:loop>
-      </ul>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
 
-    <b:else/> <!-- normal blog profile -->
-
-      <b:if cond='data:photo.url != &quot;&quot;'>
-        <a expr:href='data:userUrl'><img class='profile-img' expr:alt='data:photo.alt' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></a>
-      </b:if>
-
-      <dl class='profile-datablock'>
-        <dt class='profile-data'>
-          <a class='profile-name-link g-profile' expr:href='data:userUrl' expr:style='&quot;background-image: url(&quot; + data:profileLogo + &quot;);&quot;' rel='author'>
-            <data:displayname/>
-          </a>
-          <b:if cond='data:hasgoogleprofile'>
-            <br/>
-            <div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
-          </b:if>
-        </dt>
-
-        <b:if cond='data:showlocation == &quot;true&quot;'>
-          <dd class='profile-data'><data:location/></dd>
-        </b:if>
-
-        <b:if cond='data:aboutme != &quot;&quot;'><dd class='profile-textblock'><data:aboutme/></dd></b:if>
-      </dl>
-      <a class='profile-link' expr:href='data:userUrl' rel='author'><data:viewProfileMsg/></a>
-    </b:if>
-
-     <b:include name='quickedit'/>
-    </div>
-  </b:includable>
+  <b:include name='quickedit'/>
+</b:includable>
   </b:widget>
 </b:section-contents></html>
