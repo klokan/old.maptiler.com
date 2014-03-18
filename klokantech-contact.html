@@ -3,237 +3,248 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
-<head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8">
-    <title>Klokan Technologies - fast maps for the web and mobile. Prepare map tiles for Google Maps, Google Earth KML SuperOverlay</title>
-    <meta name="description" content="Klokan Technologies transforms raster maps into a format suitable for web applications, mobile devices and 3D visualisation. It is the fastest and simplest tool to prepare raster geodata for web mashups, mobile apps and for Google Earth. It produces either a a folder with tiles and simple HTML viewer or the MBTiles archive.">
-    <meta name="author" content="Klokan Technologies GmbH">
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Main Style -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Color Style -->
-    <link rel="stylesheet" href="css/skins/colors/blue.css" name="colors">
-    <!-- Layout Style -->
-    <link rel="stylesheet" href="css/layout/wide.css" name="layout">
-    <!-- Custom Klokantech Style -->
-    <link href="css/klokantech.css" rel="stylesheet" type="text/css" />
-    <!--[if lt IE 9]>
-      <script src="js/html5.js"></script>
-    <![endif]-->
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--<![endif]-->
+    <head>
+        <!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <title>Klokan Technologies - fast maps for the web and mobile. Prepare map tiles for Google Maps, Google Earth KML SuperOverlay</title>
+        <meta name="description" content="Klokan Technologies transforms raster maps into a format suitable for web applications, mobile devices and 3D visualisation. It is the fastest and simplest tool to prepare raster geodata for web mashups, mobile apps and for Google Earth. It produces either a a folder with tiles and simple HTML viewer or the MBTiles archive.">
+        <meta name="author" content="Klokan Technologies GmbH">
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Main Style -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Color Style -->
+        <link rel="stylesheet" href="css/skins/colors/blue.css" name="colors">
+        <!-- Layout Style -->
+        <link rel="stylesheet" href="css/layout/wide.css" name="layout">
+        <!-- Custom Klokantech Style -->
+        <link href="css/klokantech.css" rel="stylesheet" type="text/css" />
+        <!--[if lt IE 9]>
+          <script src="js/html5.js"></script>
+        <![endif]-->
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="images/favicon.ico">
 
 
-        
-</head>
-<body>
-    <div id="wrap" class="boxed">
-        <header class="style-3 style-5" id="home">
-            <div class="top-bar">
-                <div class="clearfix padding-0-40">
-                    <div class="slidedown">
-                        <div class="float-left">
-                            <div class="phone-mail">
-                                <a href="mailto:info@klokantech.com"><i class="icon-envelope s-15"></i> mail us</a>
+
+    </head>
+    <body>
+        <div id="wrap" class="boxed">
+            <header class="style-3 style-5" id="home">
+                <div class="top-bar">
+                    <div class="clearfix padding-0-40">
+                        <div class="slidedown">
+                            <div class="float-left">
+                                <div class="phone-mail">
+                                    <a href="mailto:info@klokantech.com"><i class="icon-envelope s-15"></i> mail us</a>
+                                </div>
+                                <!-- End phone-mail -->
                             </div>
-                            <!-- End phone-mail -->
+                            <div class="float-right">
+                                <div class="social">
+                                    <a href="https://www.facebook.com/maptiler"><i class="social_icon-facebook s-15"></i></a>                                
+                                    <a href="https://twitter.com/klokantech"><i class="social_icon-twitter s-12"></i></a>
+                                    <a href="https://plus.google.com/112524594087395104243" rel="publisher"><i class="social_icon-gplus s-15"></i></a>
+                                </div>
+                            </div>
+                            <!-- End social-icons -->
                         </div>
-                        <div class="float-right">
-                            <div class="social">
-                                <a href="https://www.facebook.com/maptiler"><i class="social_icon-facebook s-15"></i></a>                                
-                                <a href="https://twitter.com/klokantech"><i class="social_icon-twitter s-12"></i></a>
-                                <a href="https://plus.google.com/112524594087395104243" rel="publisher"><i class="social_icon-gplus s-15"></i></a>
+                        <!-- End slidedown -->
+                    </div>
+                    <!-- End Container -->
+                </div>
+                <!-- End top-bar -->
+                <div class="main-header">
+                    <div class="container clearfix">
+                        <a href="#" class="down-button"><i class="icon-angle-down"></i></a>
+                        <!-- this appear on small devices -->
+                        <div class="sixteen columns">
+                            <div class="logo">
+                                <a href="klokantech.html">
+                                    <img src="images/klokantech2.png" alt="Klokan Technologies" />
+                                </a>
                             </div>
                         </div>
-                        <!-- End social-icons -->
+                        <!-- End Logo -->
                     </div>
-                    <!-- End slidedown -->
+                    <!-- End Container -->
                 </div>
-                <!-- End Container -->
-            </div>
-            <!-- End top-bar -->
-            <div class="main-header">
-                <div class="container clearfix">
-                    <a href="#" class="down-button"><i class="icon-angle-down"></i></a>
-                    <!-- this appear on small devices -->
-                    <div class="sixteen columns">
-                        <div class="logo">
-                            <a href="klokantech.html">
-                                <img src="images/klokantech2.png" alt="Klokan Technologies" />
-                            </a>
+                <!-- End main-header -->
+                <div class="down-header">
+                    <div class="container clearfix">
+                        <div class="sixteen columns">
+                            <nav id="menu" class="navigation" role="navigation">
+                                <a href="#">Show navigation</a><!-- this appear on small devices -->
+                                <ul id="nav">
+                                    <li><a href="http://klokantech.com/">Home</a></li>
+                                    <li><a href="http://blog.klokantech.com/">Blog</a></li>
+                                    <li><a href="http://blog.klokantech.com/search/label/customers">References</a></li>
+                                    <li><a href="http://blog.klokantech.com/search/label/open-source">Open source</a></li>
+                                    <li><a href="http://klokantech.com/company/">Company</a></li>
+                                    <li class="active"><a href="http://klokantech.com/contact/">Contact</a></li>
+                                </ul>
+                            </nav>
                         </div>
+                        <!-- End Menu -->
                     </div>
-                    <!-- End Logo -->
+                    <!-- End Container -->
                 </div>
-                <!-- End Container -->
-            </div>
-            <!-- End main-header -->
-            <div class="down-header">
-                <div class="container clearfix">
-                    <div class="sixteen columns">
-                        <nav id="menu" class="navigation" role="navigation">
-                            <a href="#">Show navigation</a><!-- this appear on small devices -->
-                            <ul id="nav">
-                                <li><a href="klokantech.html">Home</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">References</a></li>
-                                <li><a href="#">Open source</a></li>
-                                <li><a href="klokantech-company.html">Company</a></li>
-                                <li class="active"><a href="klokantech-contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- End Menu -->
-                </div>
-                <!-- End Container -->
-            </div>
-            <!-- End main-header -->
-        </header>
-        
-        <!-- <<< End Header >>> -->        
-        <!-- Start main content -->
+                <!-- End main-header -->
+            </header>
 
-        <div class="container">
-            <div id="note"></div>
+            <!-- <<< End Header >>> -->        
+            <!-- Start main content -->
+
+            <div class="container">
+                <div id="note"></div>
+            </div>
+
+
+            <div class="container main-content clearfix">
+                <div class="eight columns top-6 bottom-6" style="text-align: right;">                                                                    
+                    <form id="ajax-contact-form" action="">
+                        <div class="form-line">
+                            <label>Name</label>
+                            <input type="text" name="name" class="text">
+                        </div>
+                        <!-- End Box -->
+                        <div class="form-line">
+                            <label>Email</label>
+                            <input type="text" name="email" class="text">
+                        </div>
+                        <!-- End Box -->                    
+                        <div class="form-line big">
+                            <label>Message</label>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <!-- End Box -->
+                        <div class="clearfix">
+                        </div>
+                        <input type="submit" value="Send" class="button small color" />
+                    </form>
+
+                    <!-- End fields -->
+                </div>
+                <div class="one columns top-6 bottom-6">
+                </div>
+                <div class="seven columns top-6 bottom-6 address-box">
+                    <ul class="address-info">
+                        <li>Klokan Technologies GmbH<br />
+                            Bahnhofstrasse 9<br />
+                            6340 Baar, Switzerland<br />
+                            Europe</li>
+                    </ul>
+                    <ul class="phone-info">
+                        <li>+41 41 511 26 12</li>
+                    </ul>
+                    <ul class="email-info">
+                        <li><script type="text/javascript"><!--
+    var psukegq = ['l', 'c', 'a', 'f', 'm', '"', 'e', 'i', 'f', 'r', 'h', 'k', 'n', 'o', 'k', 'h', 'c', 'e', ':', 'o', '.', 'c', 'a', 'o', 'l', 'm', '=', '"', 't', 'a', '>', 's', 'e', 'k', 'h', '<', 'a', 'i', 'l', 'a', 'n', 'i', 't', 'l', 'o', 'o', '"', '@', ' ', 'f', '>', 'o', 'o', 'a', 'k', 'c', '@', '.', 'c', '"', '=', 'n', 's', ' ', 'a', 'l', 't', 'i', 'm', 'n', 'm', '<', '/', 'e'];
+                            var jtjgjpz = [48, 32, 10, 6, 45, 43, 28, 51, 53, 4, 3, 24, 17, 19, 21, 30, 64, 63, 15, 23, 31, 29, 39, 68, 12, 34, 42, 35, 13, 46, 73, 40, 5, 59, 65, 70, 72, 11, 22, 60, 61, 47, 27, 38, 58, 14, 49, 55, 2, 18, 50, 33, 54, 1, 56, 37, 20, 66, 67, 8, 7, 26, 41, 36, 25, 57, 62, 16, 9, 52, 69, 0, 71, 44];
+                            var tfjeiyx = new Array();
+                            for (var i = 0; i < jtjgjpz.length; i++) {
+                                tfjeiyx[jtjgjpz[i]] = psukegq[i];
+                            }
+                            for (var i = 0; i < tfjeiyx.length; i++) {
+                                document.write(tfjeiyx[i]);
+                            }
+                            // --></script>
+                            <noscript>Please enable Javascript to see the email address</noscript></li>
+                    </ul>
+                    <ul class="registration-info">
+                        <li>
+                            ID: CH-170.4.009.510-4<br />
+                            VAT: CHE-115.421.836
+                        </li>
+                    </ul>                                                
+                </div>
+            </div>
+            <!-- <<< End Container >>> -->
+            <footer>
+                <div class="footer-down">
+                    <div class="container clearfix">
+                        <div class="eight columns">
+                            Copyright Klokantech 2014
+                        </div>
+                        <!-- End copyright -->
+                        <div class="eight columns align-right">                    
+                            <a href='http://klokantech.com/contact/' style='color: #989898'>info&#064;kloka<!--@-->ntech.com</a>                    
+                        </div>
+                        <!-- End phone -->
+                    </div>
+                    <!-- End container -->
+                </div>
+                <!-- End footer-top -->
+            </footer><!-- <<< End Footer >>> -->
         </div>
+        <!-- End wrap -->
+        <!-- Start JavaScript -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <!-- jQuery library -->
+        <script src="js/jquery.easing.1.3.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery-ui/jquery.ui.core.js"></script>
+        <!-- jQuery Ui Core-->
+        <script src="js/jquery-ui/jquery.ui.widget.js"></script>
+        <!-- jQuery Ui Widget -->
+        <script src="js/jquery-ui/jquery.ui.accordion.js"></script>
+        <!-- jQuery Ui accordion-->
+        <script src="js/jquery-cookie.js"></script>
+        <!-- jQuery cookie -->
+        <script src="js/ddsmoothmenu.js"></script>
+        <!-- Nav Menu ddsmoothmenu -->
+        <script src="js/jquery.flexslider.js"></script>
+        <!-- Flex Slider  -->
+        <script src="js/colortip.js"></script>
+        <!-- Colortip Tooltip Plugin  -->
+        <script src="js/tytabs.js"></script>
+        <!-- jQuery Plugin tytabs  -->
+        <script src="js/jquery.ui.totop.js"></script>
+        <!-- UItoTop plugin  -->
+        <script src="js/carousel.js"></script>
+        <!-- jQuery Carousel  -->
+        <script src="js/jquery.isotope.min.js"></script>
+        <!-- Isotope Filtering  -->
+        <script src="js/twitter/jquery.tweet.js"></script>
+        <!-- jQuery Tweets -->
+        <script src="js/jflickrfeed.min.js"></script>
+        <!-- jQuery Flickr -->
+        <script src="js/social-options.js"></script>
+        <!-- social options , twitter, flickr.. -->
+        <script src="js/doubletaptogo.js"></script>
+        <!-- Touch-friendly Script  -->
+        <script src="js/fancybox/jquery.fancybox.js"></script>
+        <!-- jQuery FancyBox -->
+        <script src="js/jquery.sticky.js"></script>
+        <!-- jQuery Sticky -->
+        <script src="js/custom.js"></script>
+        <!-- Custom Js file for javascript in html -->
+        <!-- End JavaScript -->
+        <!-- Start Google Map JavaScript -->
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="js/gmaps.js"></script>    
+        <!-- Contact Form Js -->
+        <script type="text/javascript">
+                            // contact form js
+                            jQuery(document).ready(function($) {
+                                $("#ajax-contact-form").submit(function() {
+                                    var str = $(this).serialize();
 
+                                    $('#note').html('<div class="alert info hideit"><i class="icon-info-sign"></i><p>Processing contact form, please wait... </p></div>');
 
-        <div class="container main-content clearfix">
-            <div class="eight columns top-6 bottom-6" style="text-align: right;">                                                                    
-                <form id="ajax-contact-form" action="">
-                    <div class="form-line">
-                        <label>Name</label>
-                        <input type="text" name="name" class="text">
-                    </div>
-                    <!-- End Box -->
-                    <div class="form-line">
-                        <label>Email</label>
-                        <input type="text" name="email" class="text">
-                    </div>
-                    <!-- End Box -->                    
-                    <div class="form-line big">
-                        <label>Message</label>
-                        <textarea name="message"></textarea>
-                    </div>
-                    <!-- End Box -->
-                    <div class="clearfix">
-                    </div>
-                    <input type="submit" value="Send" class="button small color" />
-                </form>
-                
-                <!-- End fields -->
-            </div>
-            <div class="one columns top-6 bottom-6">
-            </div>
-            <div class="seven columns top-6 bottom-6 address-box">
-                <ul class="address-info">
-                    <li>Klokan Technologies GmbH<br />
-                        Bahnhofstrasse 9<br />
-                        6340 Baar, Switzerland<br />
-                        Europe</li>
-                </ul>
-                <ul class="phone-info">
-                    <li>+41 41 511 26 12</li>
-                </ul>
-                <ul class="email-info">
-                    <li><a href="mailtoinfo@klokantech.com">info@klokantech.com</a></li>
-                </ul>
-                <ul class="registration-info">
-                    <li>
-                        ID: CH-170.4.009.510-4<br />
-                        VAT: CHE-115.421.836
-                    </li>
-                </ul>                                                
-            </div>
-        </div>
-        <!-- <<< End Container >>> -->
-        <footer>
-        <div class="footer-down">
-            <div class="container clearfix">
-                <div class="eight columns">
-                    Copyright Klokantech 2014
-                </div>
-                <!-- End copyright -->
-                <div class="eight columns align-right">                    
-                    Phone: + 345 890 098 980                    
-                </div>
-                <!-- End phone -->
-            </div>
-            <!-- End container -->
-        </div>
-        <!-- End footer-top -->
-    </footer><!-- <<< End Footer >>> -->
-    </div>
-    <!-- End wrap -->
-    <!-- Start JavaScript -->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <!-- jQuery library -->
-    <script src="js/jquery.easing.1.3.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery-ui/jquery.ui.core.js"></script>
-    <!-- jQuery Ui Core-->
-    <script src="js/jquery-ui/jquery.ui.widget.js"></script>
-    <!-- jQuery Ui Widget -->
-    <script src="js/jquery-ui/jquery.ui.accordion.js"></script>
-    <!-- jQuery Ui accordion-->
-    <script src="js/jquery-cookie.js"></script>
-    <!-- jQuery cookie -->
-    <script src="js/ddsmoothmenu.js"></script>
-    <!-- Nav Menu ddsmoothmenu -->
-    <script src="js/jquery.flexslider.js"></script>
-    <!-- Flex Slider  -->
-    <script src="js/colortip.js"></script>
-    <!-- Colortip Tooltip Plugin  -->
-    <script src="js/tytabs.js"></script>
-    <!-- jQuery Plugin tytabs  -->
-    <script src="js/jquery.ui.totop.js"></script>
-    <!-- UItoTop plugin  -->
-    <script src="js/carousel.js"></script>
-    <!-- jQuery Carousel  -->
-    <script src="js/jquery.isotope.min.js"></script>
-    <!-- Isotope Filtering  -->
-    <script src="js/twitter/jquery.tweet.js"></script>
-    <!-- jQuery Tweets -->
-    <script src="js/jflickrfeed.min.js"></script>
-    <!-- jQuery Flickr -->
-    <script src="js/social-options.js"></script>
-    <!-- social options , twitter, flickr.. -->
-    <script src="js/doubletaptogo.js"></script>
-    <!-- Touch-friendly Script  -->
-    <script src="js/fancybox/jquery.fancybox.js"></script>
-    <!-- jQuery FancyBox -->
-    <script src="js/jquery.sticky.js"></script>
-    <!-- jQuery Sticky -->
-    <script src="js/custom.js"></script>
-    <!-- Custom Js file for javascript in html -->
-    <!-- End JavaScript -->
-    <!-- Start Google Map JavaScript -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="js/gmaps.js"></script>    
-    <!-- Contact Form Js -->
-    <script type="text/javascript">
-        // contact form js
-        jQuery(document).ready(function ($) {
-            $("#ajax-contact-form").submit(function () {
-                var str = $(this).serialize();
-                
-                $('#note').html('<div class="alert info hideit"><i class="icon-info-sign"></i><p>Processing contact form, please wait... </p></div>');
-
-                $.ajax({
-                    type: "POST",
-                    url: "inc/contact-process.php",
-                    data: str,
-                    success: function (msg) {                        
-                        $('#note').html(msg);
-                    }
-                });
-                return false;
-            });
-        });
-    </script>
-    <!-- End Contact -->        
-</body>
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "inc/contact-process.php",
+                                        data: str,
+                                        success: function(msg) {
+                                            $('#note').html(msg);
+                                        }
+                                    });
+                                    return false;
+                                });
+                            });
+        </script>
+        <!-- End Contact -->        
+    </body>
 </html>

@@ -19,7 +19,8 @@ header .social a:hover, header .social a:hover, .phone-mail a:hover { color: #ad
 header.style-3 .down-header  { border-top: 0; background-color: #f6f6f6; }
 .navigation ul li { text-transform: none; } 
 .navigation ul li a { color: #a8a8a8; font-size: 14px;}
-        
+header.style-3 .navigation ul li a.selected, header.style-3 .navigation ul li.active a {background-color: #ededed; color: #00549a;} 
+
 .one-page { margin-bottom: 24px; }
 .one-page h1.title { font: 400 30px/1 'Open Sans'; margin: 65px 0 23px; color: #393939; }
 .one-page p.description { color: #989898; font: 400 14px/20px 'Open Sans'; margin-bottom: 37px;}
