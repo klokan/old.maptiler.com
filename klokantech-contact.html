@@ -90,9 +90,10 @@
             <!-- Start main content -->
             <div class="container">          
                 <br>
+                      <div id="note"></div>
 
                 <div class="container main-content clearfix">
-                    <div class="eight columns top-6 bottom-6" style="text-align: right;">                                                                    
+                    <div class="eight columns top-6 bottom-6" style="text-align: right;"> 
                         <form id="ajax-contact-form" action="">
                             <div class="form-line">
                                 <label style="background-color: white;">Name</label>
@@ -106,7 +107,7 @@
                             <!-- End Box -->                    
                             <div class="form-line big">
                                 <label style="background-color: white;">Message</label>
-                                <textarea name="message"></textarea>
+                                <textarea name="message" class="text"></textarea>
                             </div>
                             <!-- End Box -->
                             <div class="clearfix">
@@ -228,6 +229,7 @@
                                             data: str,
                                             success: function(msg) {
                                                 $('#note').html(msg);
+                                                $('.text').val('');
                                             }
                                         });
                                         return false;
