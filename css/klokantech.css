@@ -82,3 +82,9 @@ header.style-3 .navigation ul li a.selected, header.style-3 .navigation ul li.ac
 .alert .icon-warning-sign,
 .alert .icon-check, 
 .alert .icon-info-sign { position: absolute; top: 13px; left: 13px; }
+
+.post-body h2, h3, h4{font: normal normal 22px Open Sans; margin-top: 10px;}
+.post-body h5{font: normal normal 18px Open Sans; margin-top: 10px;}
+.post-body h6{font: normal normal 16px Open Sans; margin-top: 10px;}
+.post-body ul, li{list-style-type: square;}
+.post-body i{font-style: italic;}
