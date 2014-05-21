@@ -88,3 +88,4 @@ header.style-3 .navigation ul li a.selected, header.style-3 .navigation ul li.ac
 .post-body h6{font: normal normal 16px Open Sans; padding-top: 10px;}
 .post-body ul, li{list-style-type: square;}
 .post-body i{font-style: italic;}
+.address-info li, .phone-info li, .registration-info li, .email-info li{list-style-type: none;}
