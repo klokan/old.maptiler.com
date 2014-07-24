@@ -71,10 +71,10 @@
                 <a href="#">Show navigation</a><!-- this appear on small devices -->
                 <ul id="nav">
                   <!-- <li class="active"><a href="#home">Home</a></li> -->
-                  <li><a href="#features">Features</a></li>
-                  <li><a href="#pricing">Pricing</a></li>
-                  <li><a href="#video_tutorials">Video tutorials</a></li>
-                  <li><a href="#developers">Developers</a></li>
+                  <li class="nav-item"><a href="#features">Features</a></li>
+                  <li><a href="pricing/">Pricing</a></li>
+                  <li class="nav-item"><a href="#video_tutorials">Video tutorials</a></li>
+                  <li class="nav-item"><a href="#developers">Developers</a></li>
                   <!-- 
 <li><a href="#portfolio">References</a></li>
 <li><a href="#about">Pages</a></li>
@@ -451,21 +451,17 @@
     </div>
     <!-- End about -->
     <!-- ======================== End ======================== -->
-    <!-- ======================== End ======================== -->
-    <div class="bottom-3" id="pricing">
+    <!--div class="bottom-3" id="pricing">
       <div class="container clearfix">
         <div class="sixteen columns clearfix">
           <hr class="line top-3 bottom-3">
         </div>
-        <!-- End line -->
-        <!-- ==================== start 3 columns ==================== -->
         <div class="one-third column tables-column">
           <div class="header">
             <div class="free">
               <a href="#">
                 <img src="images/maptiler-logo-free.png" alt="FREE" /></a></div>
           </div>
-          <!-- End header -->
           <ul class="list">
             <li>1 CPU core</li>
             <li>"MapTiler.com" watermark</li>
@@ -485,17 +481,13 @@
               <a href="http://www.klokantech.com/contact/" class="requestDemo color">Linux</a>
             </p>
           </div>
-          <!-- End footer -->
         </div>
-        <!-- End column -->
-        <!-- ==== Featured Column ==== -->
         <div class="one-third column tables-column">
           <div class="header">
             <div class="start">
               <a href="#">
                 <img src="images/maptiler-logo-start.png" alt="START" /></a></div>
           </div>
-          <!-- End header -->
           <ul class="list">
             <li>2 CPU cores</li>
             <li>No watermark</li>
@@ -510,17 +502,13 @@
           <p>
             <a href="https://sites.fastspring.com/klokantech/instant/maptiler-start" class="button small color">Buy Now</a>
             <br>Download&nbsp;Free and&nbsp;activate</p>
-          <!-- End footer -->
         </div>
-        <!-- End column -->
-        <!-- ==== End Featured Column ==== -->
         <div class="one-third column tables-column color">
           <div class="header">
             <div class="pro">
               <a href="#"><img src="images/maptiler-logo-pro.png" alt="PRO" /></a>
             </div>
           </div>
-          <!-- End header -->
           <ul class="list">
             <li>4 CPU cores and more*</li>
             <li>No watermark or a custom one</li>
@@ -539,13 +527,11 @@
             <a href="https://sites.fastspring.com/klokantech/instant/maptiler-pro-30" class="color">Buy 30 day license</a><br>            
             <a href="https://sites.fastspring.com/klokantech/instant/maptiler-pro" class="color">Buy unlimited license</a><br>
         </div>
-        <!-- End column -->
         <div style="text-align: center">
           * additional CPU cores may be purchased separately.</div>
       </div>
-      <!-- End Container -->
     </div>
-    <!-- End about -->
+      <!-- End Container -->
     <!-- ==================== End 3 columns ==================== -->
 
     <!-- ======================== Contact form ======================== -->
@@ -998,7 +984,7 @@
                               //Well I'm widle
                             }
 
-                            $('#nav').onePageNav({
+                            $('.nav-item').onePageNav({
                               begin: function() {
                                 // console.log('start')
                               },
