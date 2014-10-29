@@ -101,8 +101,11 @@ include '../config.php';
       <!-- Pricing table -->
       <div class="one-page bottom-3" id="pricing">
         <br>
+        <br>
+        <br>
+        <br>
         <div class="container clearfix">
-          <h2>Available Linux distributions</h2>
+          <h2>MapTiler Free/Start/Plus for Linux</h2>
           <table class="style">
             <tbody>
               <tr>
