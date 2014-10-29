@@ -2,352 +2,260 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-    <head>
+  <head>
+    <meta charset="utf-8">
+    <title>Georeferencer - fast maps for the web and mobile. Prepare map tiles for Google Maps, Google Earth KML SuperOverlay</title>
+    <meta name="description" content="Georeferencer transforms raster maps into a format suitable for web applications, mobile devices and 3D visualisation. It is the fastest and simplest tool to prepare raster geodata for web mashups, mobile apps and for Google Earth. It produces either a a folder with tiles and simple HTML viewer or the MBTiles archive.">
+    <meta name="author" content="Klokan Technologies GmbH">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/skins/colors/blue.css" name="colors">
+    <link rel="stylesheet" href="css/layout/wide.css" name="layout">
 
-        <!-- Basic Page Needs -->
-        <meta charset="utf-8">
-        <title>Georeferencer - fast maps for the web and mobile. Prepare map tiles for Google Maps, Google Earth KML SuperOverlay</title>
-        <meta name="description" content="Georeferencer transforms raster maps into a format suitable for web applications, mobile devices and 3D visualisation. It is the fastest and simplest tool to prepare raster geodata for web mashups, mobile apps and for Google Earth. It produces either a a folder with tiles and simple HTML viewer or the MBTiles archive.">
-        <meta name="author" content="Klokan Technologies GmbH">
+    <!--[if lt IE 9]>
+        <script src="http://maptiler.com/js/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="http://maptiler.com/images/georeferencer.ico">
 
-        <!-- Mobile Specific Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body class="one-page">
 
-        <!-- Main Style -->
-        <link rel="stylesheet" href="/css/style.css"> 
+    <div id="wrap" class="boxed">
+      <header class="fixed" id="home">
+        <div class="top-bar">
+          <div class="container clearfix">
+            <div class="slidedown">
 
-        <!-- Color Style -->
-        <link rel="stylesheet" href="/css/skins/colors/blue.css" name="colors">
+              <div class="eight columns">
+                <div class="phone-mail" style="padding-top:8px;">
+                  <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a>
+                </div><!-- End phone-mail -->
+              </div>
+              <div class="eight columns">
+                <div class="social">
+                  <a href="https://plus.google.com/108829164432038951929" rel="publisher"><i class="social_icon-gplus s-18"></i></a>
+                  <a href="https://twitter.com/georeferencer"><i class="social_icon-twitter s-14"></i></a>
+                  <a href="https://www.facebook.com/georeferencer"><i class="social_icon-facebook s-18"></i></a>
+                </div>
+              </div><!-- End social-icons -->
 
-        <!-- Layout Style -->
-        <link rel="stylesheet" href="/css/layout/wide.css" name="layout">
+            </div><!-- End slidedown -->
+          </div><!-- End Container -->
 
-        <!--[if lt IE 9]>
-            <script src="http://maptiler.com/js/html5.js"></script>
-        <![endif]-->
+        </div><!-- End top-bar -->
 
-        <!-- Favicons -->
-        <link rel="shortcut icon" href="http://maptiler.com/images/georeferencer.ico">
+        <div class="main-header">
+          <div class="container clearfix">
+            <a href="#" class="down-button"><i class="icon-angle-down"></i></a><!-- this appear on small devices -->
+            <div class="one-third column">
+              <div class="logo">
+                <a href="/">
+                  <img src="http://maptiler.com/images/georeferencer.png" alt="Georeferencer" />
+                </a>
+              </div>
+            </div><!-- End Logo -->
 
-    </head>
-    <body class="one-page">
+            <div class="two-thirds column">
+              <nav id="menu" class="navigation" role="navigation">
+                <a href="#">Show navigation</a><!-- this appear on small devices -->
+                <ul id="nav">
+                  <!--    <li class="active"><a href="#home">Home</a></li> -->
+                  <li><a href="#clients">Clients</a></li>
+                  <li><a href="#get">Get Georeferencer</a></li>
+                  <li><a href="/georeferencer_pricing.pdf" target="_blank" class="external">Pricing</a></li>
+                  <li><a href="http://www.klokantech.com/contact/" target="_blank" class="external">Contact us</a></li>
+                  <!-- 
+      <li><a href="#portfolio">References</a></li>
+      <li><a href="#about">Pages</a></li>
+      <li><a href="#contact">Contact</a></li>
+                  -->
+                </ul>
+              </nav>
+            </div><!-- End Menu -->
+          </div><!-- End Container -->
+        </div><!-- End main-header -->
 
-        <div id="wrap" class="boxed">
-            <header class="fixed" id="home">
-                <div class="top-bar">
-                    <div class="container clearfix">
-                        <div class="slidedown">
+      </header><!-- <<< End Header >>> -->
 
-                            <div class="eight columns">
-                                <div class="phone-mail" style="padding-top:8px;">
-                                    <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a>
-                                </div><!-- End phone-mail -->
-                            </div>
-                            <div class="eight columns">
-                                <div class="social">
-                                    <a href="https://plus.google.com/108829164432038951929" rel="publisher"><i class="social_icon-gplus s-18"></i></a>
-                                    <a href="https://twitter.com/georeferencer"><i class="social_icon-twitter s-14"></i></a>
-                                    <a href="https://www.facebook.com/georeferencer"><i class="social_icon-facebook s-18"></i></a>
-                                </div>
-                            </div><!-- End social-icons -->
+      <!-- ======================== Start welcome ======================== -->
 
-                        </div><!-- End slidedown -->
-                    </div><!-- End Container -->
+      <div class="one-page bottom-3">
+        <div class="container clearfix">
+          <div class="sixteen columns bottom-2"> 
+            <h1 class="title top-5">Turn scans into maps</h1> 
+            <p class="description">
+              Georeferencer is an online tool that assigns geographical location to any image.
+            </p>
+          </div>
+        </div><!-- End Container -->
+      </div><!-- End welcome -->
+      <!-- ======================== End ======================== -->
 
-                </div><!-- End top-bar -->
+      <!-- ======================== Start section ======================== -->
+      <div class="one-page home-bg section">
+        <div class="container clearfix">
+          <div class="eight columns">
+            <h2>How does it work?</h2>
+            <p>There are two maps on the screen. On the left side is a picture of an old map and on the right side is the up-to date online map. Just find the same place on both maps, click on this place in the left screen and then in the right screen. A minimum of three control points are required to calculate the geographical position of the map. The more control points that are added, the more precise the georeference is. Standardized Web Map Tile Service (OGC WMTS) is delivered immediately.</p>
+            <br>
+            <p>The historical map can appear as an overlay on the correct position in Google Earth or over modern maps. Side-by-side view is available as well, to compare any two maps next to each other. Via crowdsourcing, you can invite visitors of your website or the general public to actively participate and help your institution with locating of your maps. Login is available with Facebook, Twitter, or Google accounts.</p>
+            <br>
+            <br>
+          </div>
+          <div class="eight columns">
+            <br><br><br><br>
+            <center>
+              <iframe width="440" height="320" src="http://www.youtube.com/embed/pgvykE1ZKrI?rel=0" frameborder="0" allowfullscreen></iframe>
+            </center>
+            <br>
+          </div>
 
-                <div class="main-header">
-                    <div class="container clearfix">
-                        <a href="#" class="down-button"><i class="icon-angle-down"></i></a><!-- this appear on small devices -->
-                        <div class="one-third column">
-                            <div class="logo">
-                                <a href="/">
-                                    <img src="http://maptiler.com/images/georeferencer.png" alt="Georeferencer" />
-                                </a>
-                            </div>
-                        </div><!-- End Logo -->
+        </div><!-- End Container -->
+      </div><!-- End section -->
 
-                        <div class="two-thirds column">
-                            <nav id="menu" class="navigation" role="navigation">
-                                <a href="#">Show navigation</a><!-- this appear on small devices -->
-                                <ul id="nav">
-                                    <!--    <li class="active"><a href="#home">Home</a></li> -->
-                                    <li><a href="#clients">Clients</a></li>
-                                    <li><a href="#features">Features</a></li>
-                                    <li><a href="#requirements">Requirements</a></li>
-                                    <li><a href="http://www.klokantech.com/contact/" target="_blank" class="external">Contact us</a></li>
-                                    <!-- 
-                        <li><a href="#portfolio">References</a></li>
-                        <li><a href="#about">Pages</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                                    -->
-                                </ul>
-                            </nav>
-                        </div><!-- End Menu -->
-                    </div><!-- End Container -->
-                </div><!-- End main-header -->
+      <!-- ======================== End ======================== -->
 
-            </header><!-- <<< End Header >>> -->
+      <!-- ======================== Clients ======================== -->
 
-            <!-- ======================== Start welcome ======================== -->
+      <div class="one-page services style-2 bottom-4 top-5">
+        <div class="container clearfix">
 
-            <div class="one-page bottom-3">
-                <div class="container clearfix">
-                    <div class="sixteen columns bottom-2"> 
-                        <h1 class="title top-5">Turn scans into maps. Collaboratively.</h1> 
-                        <p class="description bottom-4">
-                            Georeferencer is an online tool that creates real maps from scanned images.
-                        </p>
-                        <!--
-                        <center><a href="#" class="button large color">
-                        <i class="social_icon-appstore s-30 white"></i> &nbsp; Download On App Store</a></center>
-                        -->
-                    </div>
-                </div><!-- End Container -->
-            </div><!-- End welcome -->
-            <!-- ======================== End ======================== -->
+          <div class="one-page sixteen columns"> 
+            <h2 class="title top-1" id="clients">Institutions using Georeferencer</h2> 
+            <p class="description bottom-4">
+              Large collections of scanned images have been successfully georeferenced in crowdsourcing pilots of our customers. 
+            </p>
+          </div>
 
-            <!-- ======================== Start section ======================== -->
-            <div class="one-page home-bg section">
-                <div class="container clearfix">
-                    <div class="eight columns">
-                        <p>A scanned map is only a <strong>picture and not a map</strong> at all: it is not searchable geographically and cannot be compared with other maps. Georeferencer is an online tool that assigns particular geographical location to the image and overlays it over modern maps.</p>
-                        <br>
-                        <p>Libraries, archives and other culture heritage institutions have begun a process of massive scanning and publishing of historical maps. Result of this are thousands of scanned images with no reference what the map covers except its original bibliographic record.</p>
-                    </div>
-                    <div class="eight columns">
-                        <center>
-                            <iframe width="440" height="320" src="http://www.youtube.com/embed/pgvykE1ZKrI?rel=0" frameborder="0" allowfullscreen></iframe>
-                        </center>
-                        <br>
-                    </div>
+          <div class="featured-clients">
+            <div class="four columns item"> <a href="http://www.bl.uk/maps/index.html#"><img src="http://maptiler.com/images/img/clients/client-1.png" alt="bl.uk" /></a> </div>
+            <div class="four columns item"> <a href="http://www.staremapy.cz/"><img src="http://maptiler.com/images/img/clients/client-2.png" alt="Staré mapy" /></a> </div>
+            <div class="four columns item"> <a href="http://maps.nls.uk/projects/georeferencer/"><img src="http://maptiler.com/images/img/clients/client-3.png" alt="Maps.nls.uk" /></a> </div>
+            <div class="four columns item"> <a href="http://en.nationaalarchief.nl/"><img src="http://maptiler.com/images/img/clients/client-4.png" alt="National archief" /></a> </div>
+            <div class="four columns item"> <a href="http://bmarchives.org"><img src="http://maptiler.com/images/img/clients/client-5.png" alt="Bmarchives" /></a> </div>
+          </div>
 
-                </div><!-- End Container -->
-            </div><!-- End section -->
+        </div><!-- End Container -->
+      </div><!-- End features -->
 
-            <!-- ======================== End ======================== -->
+      <!-- ======================== End ======================== --> 
+      
+      <!-- ======================== Start section ======================== -->
+      <div class="one-page home-bg section">
+        <div class="container clearfix">
+          <div class="eight columns">
+            <br><br><br><br>
+            <center>
+              <iframe width="420" height="315" src="//www.youtube.com/embed/qTjlKnW-sbY?rel=0" frameborder="0" allowfullscreen></iframe>
+            </center>
+            <br>
+          </div>
+          <div class="eight columns">
+            <h2>Why georeference?</h2>
+            <p>Historical maps are the field where search tools, such as Google, often fail. This is because maps are documents related to the place itself, and not to its name. The names of places change with time, the geographical position does not. To find a historical map of a small place, that is not indexed by keywords can take hours, or days, if it is even possible at all. Our approach makes such searches easy and fast by geographical search.</p>
+            <br>
+            <p>The search takes 20 seconds, instead of hours and days spent going through different archives. You can try to search for any place at <a href="http://www.oldmapsonline.org" target="_blank">www.oldmapsonline.org</a>, which is a search engine for old maps based on the <a href=”http://www.mapranksearch.com/” target="_blank">MapRankSearch</a> platform. If you want to have a geographical search on your website, you will need to host your maps on a suitable server, provide a fast and reliable web viewer (see more at <a href="http://klokantech.com/cultural-heritage/">Cultural heritage</a> page) and assign geographical location to each record, which is exactly what Georeferencer does.</p>
+            <br>
+            <p></p>
+            <br>
+            <br>
+          </div>
+        </div><!-- End Container -->
+      </div><!-- End section -->
 
+      <!-- ======================== End ======================== -->
 
-            <!-- ======================== Clients ======================== -->
+      <!-- ======================== Start section ======================== -->
+      <div class="one-page section" id="get">
+        <div class="container clearfix">
+          <div class="eight columns">
+            <h2>Get Georeferencer</h2>
+            <p>The only requirement is to have hosted maps with a zoomable viewer. In case your map is not available online yet, we can arrange suitable hosting and an online viewer based on the IIIF standard. More information about the hosting of maps is available at <a href="http://klokantech.com/cultural-heritage/">Cultural heritage</a> page.</p>
+            <br>
+            <p>When the maps are online and accessible, a spreasheet with links to the maps and catalogue records is required for the initial import. If we have all this together, we will load your maps in the system within a two weeks. Please see the documentation for the sample spreadsheet and what cells it should contain at: <a href="http://help.georeferencer.com/metadata">http://help.georeferencer.com/metadata</a>. The service is supplied in the default orange design and it is possible to customize the design to fit into your website. There are also several widgets that can be pasted into the website.</p>
+            <br>
+            <p>There is a fee for initial setup and then a maintenance fee for each year running the service, which is according to the number of maps that you use, please <a href="/georeferencer_pricing.pdf" target="_blank">see the pricelist</a>. For any information regarding implementation of Georeferencer for your organization, please <a href="http://klokantech.com/contact/">contact us.</a></p>
+          </div>
+          <div class="eight columns">
+            <br>
+            <br>
+            <br>
+            <center>
+              <img src="images/georeferencer-screen.png" alt="Georeferencer">
+            </center>
+            <br>
+          </div>
 
-            <div class="one-page services style-2 bottom-4 top-5">
-                <div class="container clearfix">
+        </div><!-- End Container -->
+      </div><!-- End section -->     
 
-                    <div class="one-page sixteen columns"> 
-                        <h2 class="title top-1" id="clients">Institutions using Georeferencer</h2> 
-                        <p class="description bottom-4">
-                            Large collections of scanned images have been successfully georeferenced in crowdsourcing pilots of our customers. 
-                        </p>
-                    </div>
+      <!-- ======================== End ======================== -->
 
-                    <div class="featured-clients">
-                        <div class="four columns item"> <a href="http://www.bl.uk/maps/index.html#"><img src="http://maptiler.com/images/img/clients/client-1.png" alt="bl.uk" /></a> </div>
-                        <div class="four columns item"> <a href="http://www.staremapy.cz/"><img src="http://maptiler.com/images/img/clients/client-2.png" alt="Staré mapy" /></a> </div>
-                        <div class="four columns item"> <a href="http://maps.nls.uk/projects/georeferencer/"><img src="http://maptiler.com/images/img/clients/client-3.png" alt="Maps.nls.uk" /></a> </div>
-                        <div class="four columns item"> <a href="http://en.nationaalarchief.nl/"><img src="http://maptiler.com/images/img/clients/client-4.png" alt="National archief" /></a> </div>
-                        <div class="four columns item"> <a href="http://bmarchives.org"><img src="http://maptiler.com/images/img/clients/client-5.png" alt="Bmarchives" /></a> </div>
-                    </div>
+      <footer>
+        <div class="footer-down">
+          <div class="container clearfix">
 
-                </div><!-- End Container -->
-            </div><!-- End features -->
+            <div class="eight columns">
+              <span class="copyright">
+                © Copyright 2014 <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a>. All Rights Reserved.</span>
+            </div><!-- End copyright -->
 
-            <!-- ======================== End ======================== --> 
+            <div class="eight columns">
+              <div class="social">
+                <a href="https://plus.google.com/108829164432038951929" rel="publisher"><i class="social_icon-gplus s-18"></i></a>
+                <a href="https://twitter.com/georeferencer"><i class="social_icon-twitter s-14"></i></a>
+                <a href="https://www.facebook.com/georeferencer"><i class="social_icon-facebook s-18"></i></a>
+              </div>
+            </div><!-- End social icons -->
 
-            <!-- ======================== Start section ======================== -->
+          </div><!-- End container -->
+        </div><!-- End footer-top -->
 
-            <div class="one-page home-bg section">
-                <div class="container clearfix">
-                    <div class="eight columns">
-                        <h2 class="title" id="features">Crowdsourcing</h2>
-                        <p>Libraries, archives and other culture heritage institutions have begun a process of massive scanning and publishing of historical maps. Result of this are thousands of scanned images with no reference what the map covers except its original bibliographic record.</p>
-                        <br><p>Georeferencer represents a simple and affordable way to engage online visitors and general public to work on attractive map collections. Via so called “crowdsourcing” the tool can be used by staff as well as by volunteers, either in groups explicitly organized for this task by the institution or simply recruited from online visitors and general public.</p>
-                        <br><p>3D visualization of maps via Google Earth, overlays with other maps and accuracy analysis of maps are available for each user who wants to conduct research and analysis on the online images as well as just overlay these maps with modern base maps and recent aerial or satellite imagery.</p>
+      </footer><!-- <<< End Footer >>> -->
 
-                        <!-- delivers standardized Web Map Service (OGC WMS) It can be easily integrated in institution’s website -->
-                        <!--</p>-->
+    </div><!-- End wrap -->
 
-                    </div>
+    <!-- Start JavaScript -->
+    <script src="http://maptiler.com/js/jquery-1.9.1.min.js"></script> <!-- jQuery library -->
+    <script src="http://maptiler.com/js/jquery.easing.1.3.min.js"></script> <!-- jQuery Easing --> 
+    <script src="http://maptiler.com/js/jquery-ui/jquery.ui.core.js"></script> <!-- jQuery Ui Core-->
+    <script src="http://maptiler.com/js/jquery-ui/jquery.ui.widget.js"></script> <!-- jQuery Ui Widget -->
+    <script src="http://maptiler.com/js/jquery-ui/jquery.ui.accordion.js"></script> <!-- jQuery Ui accordion--> 
+    <script src="http://maptiler.com/js/jquery-cookie.js"></script> <!-- jQuery cookie --> 
+    <script src="http://maptiler.com/js/ddsmoothmenu.js"></script> <!-- Nav Menu ddsmoothmenu -->
+    <script src="http://maptiler.com/js/jquery.flexslider.js"></script> <!-- Flex Slider  -->
+    <script src="http://maptiler.com/js/colortip.js"></script> <!-- Colortip Tooltip Plugin  -->
+    <script src="http://maptiler.com/js/tytabs.js"></script> <!-- jQuery Plugin tytabs  -->
+    <script src="http://maptiler.com/js/jquery.ui.totop.js"></script> <!-- UItoTop plugin  -->
+    <script src="http://maptiler.com/js/carousel.js"></script> <!-- jQuery Carousel  -->
+    <script src="http://maptiler.com/js/jquery.isotope.min.js"></script> <!-- Isotope Filtering  -->
+    <script src="http://maptiler.com/js/twitter/jquery.tweet.js"></script> <!-- jQuery Tweets -->
+    <script src="http://maptiler.com/js/jflickrfeed.min.js"></script> <!-- jQuery Flickr -->
+    <script src="http://maptiler.com/js/social-options.js"></script> <!-- social options , twitter, flickr.. -->
+    <script src="http://maptiler.com/js/doubletaptogo.js"></script> <!-- Touch-friendly Script  -->
+    <script src="http://maptiler.com/js/fancybox/jquery.fancybox.js"></script> <!-- jQuery FancyBox -->
+    <script src="http://maptiler.com/js/jquery.sticky.js"></script> <!-- jQuery Sticky -->
+    <!-- Start onepage js -->
+    <script src="http://maptiler.com/js/one-page/jquery.scrollTo.js"></script> 
+    <script src="http://maptiler.com/js/one-page/jquery.nav.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#nav').onePageNav({
+          begin: function() {
+            // console.log('start')
+          },
+          end: function() {
+            // console.log('stop')
+          },
+          filter: ':not(.external)',
+          scrollThreshold: 0.25,
+          scrollOffset: 200
+        });
+      });
+    </script>
+    <!-- End onepage js -->
+    <script src="http://maptiler.com/js/custom.js"></script> <!-- Custom Js file for javascript in html -->
+    <!-- End JavaScript -->
 
-                    <div class="eight columns">
-                        <center>
-                            <img src="http://maptiler.com/images/georeferencer-stare-mapy.png" alt="Old maps">
-                        </center>
-                        <br>
-                    </div>
-
-                </div><!-- End Container -->
-            </div><!-- End section -->
-            <!-- ======================== End ======================== -->
-
-
-            <!-- ======================== Start section ======================== -->
-            <div class="one-page section">
-                <div class="container clearfix">
-
-                    <div class="eight columns">
-                        <center>
-                            <img src="http://maptiler.com/images/georeferencer-screenshot-earth.jpg" class="pic" style="margin-top: 3.5em" alt="Georeferencer"/>
-                        </center>
-                        <br><br>
-                    </div>
-
-                    <div class="eight columns">
-                        <h2 class="title">Benefits</h2>
-                        <p>Each georeference process <strong>enrich existing metadata records</strong> with numerical spatial footprint to allow comfortable geographical searching, such as the <a href="http://www.klokantech.com/mapranksearch/">MapRank Search</a>, in the future. Standardized Web Map Tile Service (OGC WMTS) is delivered immediatelly, so the maps are available directly in a web browser for use in mashups, with no need to install any additional software neither in the institution nor on the side of the online visitors.</p>
-                        <p>The participating libraries receives the produced metadata, which can be easily embedded into existing library catalog in a form of MARC field 034 or Dublin Core DCMI Box by the library. It is also possible to export GeoTiff or GIS-ready geodata for processing the maps in another software.</p>
-                    </div>
-
-                </div><!-- End Container -->
-            </div><!-- End section -->
-            <!-- ======================== End ======================== -->
-
-            <!-- ======================== Start Our Work ======================== -->
-            <!-- 
-            <div class="portfolio bottom-4" id="portfolio">
-                <div class="container top-5 clearfix">
-
-                    <div class="sixteen columns"> 
-                        <h2 class="title">Maps georeferenced with Georeferencer</h2> 
-                    </div>
-                    <p class="description bottom-4">Aerial photography, Weather maps, Historical maps, Aviation maps for pilots, Aviation maps for pilots, Nautical charts for sailors, Scanned paper maps, Signal coverage maps, Topographic maps for hiking and trekking</p>
-                                        <div class="sixteen columns">  
-                                            <div class="title clearfix" id="options">
-                                                <ul id="filters" class="option-set clearfix" data-option-key="filter"> 
-                                                     ><li><a href="#filter" data-option-value="*" class="selected">All</a></li> 
-                                                    <li><a href="#filter" data-option-value=".Web">Weather maps</a></li>
-                                                    <li><a href="#filter" data-option-value=".Animation">Aerial photography </a></li>
-                                                    <li><a href="#filter" data-option-value=".Logo">Historical maps</a></li>
-                                                    <li><a href="#filter" data-option-value=".Photography">Aviation maps for pilots</a></li>
-                                                    <li><a href="#filter" data-option-value=".Photography">Nautical charts for sailors</a></li>
-                                                    <li><a href="#filter" data-option-value=".Photography">Scanned paper maps</a></li>
-                                                    <li><a href="#filter" data-option-value=".Photography">Signal coverage maps</a></li>
-                                                    <li><a href="#filter" data-option-value=".Photography">Topographic maps for hiking and trekking</a></li>
-                                                </ul>
-                                            </div>
-                                        </div> 
-
-                    <center>
-                        <img src="http://www.klokantech.com/images/maptiler-screenshots.jpg" alt="Maptiler sample" />
-                    </center>
-
-                </div> 
-            </div>
-            -->
-            <!-- ======================== End ======================== -->
-
-            <!-- ======================== Start section ======================== -->
-            <div class="one-page home-bg section">
-                <div class="container clearfix">
-                    <div class="eight columns">
-                        <h2 class="title" id="requirements">Requirements</h2>
-                        <p>The map collections should provide a table with the list of the identifiers, links and metadata records. The list should be submitted in the form of Microsoft Excel / OpenOffice (XLS or CSV) file and contain unique identifier, image url (direct link to the zoomable image presentation) and image format (jpeg, png, etc..). More information available at <a href="http://help.georeferencer.org/metadata">help.georeferencer.org/metadata</a></p>
-                        <br><p>For any questions or information regarding implementation of Georeferencer in your organization, please contact us.</p>
-                    </div>
-                    <div class="eight columns">
-                        <center>
-                            <img src="http://maptiler.com/images/georeferencer-georeferencing.png" class="pic" alt="Georeferencing" />
-                        </center>
-                        <br><br>
-                    </div>
-                </div><!-- End Container -->
-            </div><!-- End section -->
-            <!-- ======================== End ======================== -->
-
-            <footer>
-
-                <!--
-                 <div class="footer-top">
-                  <div class="container clearfix">
-                    
-                    <div class="one-third column widget">
-                      <h3 class="title">Latest News</h3>
-                      <div id="tweets-footer" class='tweet query footer'></div>
-                    </div>
-                    
-                    <div class="one-third column widget">
-                      <h3 class="title">Flickr Stream</h3>
-                      <ul id="footer" class="thumbs"></ul>
-                    </div>
-                    
-                    <div class="one-third column widget">
-                      <div class="subscribe"> 
-                      <h3 class="title">Subscribe</h3>
-                      <p>Subscribe to our email newsletter to receive our news, updates and awesome free files, tuts and sources .</p>
-                      <form action="#">
-                        <input type="text" class="mail" value="your@email.com" onBlur="if(this.value == '') { this.value = 'your@email.com'; }" 
-                        onfocus="if(this.value == 'your@email.com') { this.value = ''; }"/>
-                        <input type="submit" value="Subscribe" class="submit" />
-                      </form>
-                      </div>
-                    </div>
-                    
-                  </div>
-                 </div>  -->
-
-                <div class="footer-down">
-                    <div class="container clearfix">
-
-                        <div class="eight columns">
-                            <span class="copyright">
-                                © Copyright 2014 <a href="http://www.klokantech.com/">Klokan Technologies GmbH</a>. All Rights Reserved.</span>
-                        </div><!-- End copyright -->
-
-                        <div class="eight columns">
-                            <div class="social">
-                                <a href="https://plus.google.com/108829164432038951929" rel="publisher"><i class="social_icon-gplus s-18"></i></a>
-                                <a href="https://twitter.com/georeferencer"><i class="social_icon-twitter s-14"></i></a>
-                                <a href="https://www.facebook.com/georeferencer"><i class="social_icon-facebook s-18"></i></a>
-                            </div>
-                        </div><!-- End social icons -->
-
-                    </div><!-- End container -->
-                </div><!-- End footer-top -->
-
-            </footer><!-- <<< End Footer >>> -->
-
-        </div><!-- End wrap -->
-
-        <!-- Start JavaScript -->
-        <script src="http://maptiler.com/js/jquery-1.9.1.min.js"></script> <!-- jQuery library -->
-        <script src="http://maptiler.com/js/jquery.easing.1.3.min.js"></script> <!-- jQuery Easing --> 
-        <script src="http://maptiler.com/js/jquery-ui/jquery.ui.core.js"></script> <!-- jQuery Ui Core-->
-        <script src="http://maptiler.com/js/jquery-ui/jquery.ui.widget.js"></script> <!-- jQuery Ui Widget -->
-        <script src="http://maptiler.com/js/jquery-ui/jquery.ui.accordion.js"></script> <!-- jQuery Ui accordion--> 
-        <script src="http://maptiler.com/js/jquery-cookie.js"></script> <!-- jQuery cookie --> 
-        <script src="http://maptiler.com/js/ddsmoothmenu.js"></script> <!-- Nav Menu ddsmoothmenu -->
-        <script src="http://maptiler.com/js/jquery.flexslider.js"></script> <!-- Flex Slider  -->
-        <script src="http://maptiler.com/js/colortip.js"></script> <!-- Colortip Tooltip Plugin  -->
-        <script src="http://maptiler.com/js/tytabs.js"></script> <!-- jQuery Plugin tytabs  -->
-        <script src="http://maptiler.com/js/jquery.ui.totop.js"></script> <!-- UItoTop plugin  -->
-        <script src="http://maptiler.com/js/carousel.js"></script> <!-- jQuery Carousel  -->
-        <script src="http://maptiler.com/js/jquery.isotope.min.js"></script> <!-- Isotope Filtering  -->
-        <script src="http://maptiler.com/js/twitter/jquery.tweet.js"></script> <!-- jQuery Tweets -->
-        <script src="http://maptiler.com/js/jflickrfeed.min.js"></script> <!-- jQuery Flickr -->
-        <script src="http://maptiler.com/js/social-options.js"></script> <!-- social options , twitter, flickr.. -->
-        <script src="http://maptiler.com/js/doubletaptogo.js"></script> <!-- Touch-friendly Script  -->
-        <script src="http://maptiler.com/js/fancybox/jquery.fancybox.js"></script> <!-- jQuery FancyBox -->
-        <script src="http://maptiler.com/js/jquery.sticky.js"></script> <!-- jQuery Sticky -->
-        <!-- Start onepage js -->
-        <script src="http://maptiler.com/js/one-page/jquery.scrollTo.js"></script> 
-        <script src="http://maptiler.com/js/one-page/jquery.nav.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('#nav').onePageNav({
-                    begin: function() {
-                        // console.log('start')
-                    },
-                    end: function() {
-                        // console.log('stop')
-                    },
-                    filter: ':not(.external)',
-                    scrollThreshold: 0.25,
-                    scrollOffset: 200
-                });
-            });
-        </script>
-        <!-- End onepage js -->
-        <script src="http://maptiler.com/js/custom.js"></script> <!-- Custom Js file for javascript in html -->
-        <!-- End JavaScript -->
-
-    </body>
+  </body>
 </html>
