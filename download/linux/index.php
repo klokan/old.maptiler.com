@@ -1,31 +1,28 @@
 <?php
-
 include '../config.php';
+include_once '../../pricing/secure.php';
 
+if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
+  $hash = $_GET['hash'];
+  $pro = true;
+} else {
+  $pro = false;
+}
 ?>
 <!DOCTYPE html>
-<!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-  <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <title>Pricing - MapTiler</title>
     <meta name="description" content="MapTiler transforms raster maps into a format suitable for web applications, mobile devices and 3D visualisation. It is the fastest and simplest tool to prepare raster geodata for web mashups, mobile apps and for Google Earth. It produces either a a folder with tiles and simple HTML viewer or the MBTiles archive.">
     <meta name="author" content="Klokan Technologies GmbH">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="noindex, nofolow">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/skins/colors/blue.css">
     <link rel="stylesheet" href="../../css/layout/wide.css">
-    <!--[if lt IE 9]>
-      <script src="../js/html5.js"></script>
-  <![endif]-->
     <link rel="shortcut icon" href="../../images/favicon.ico">
-    <style type="text/css">
-
-    </style>
+    <style type="text/css"></style>
     <script>
       (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -107,7 +104,13 @@ include '../config.php';
         <br>
         <br>
         <div class="container clearfix">
-          <h2>MapTiler Free/Start/Plus for Linux</h2>
+          <?php
+          if ($pro) {
+            echo '<h2>MapTiler Pro for Linux</h2>';
+          } else {
+            echo '<h2>MapTiler Free/Start/Plus for Linux</h2>';
+          }
+          ?>
           <table class="style">
             <tbody>
               <tr>
@@ -127,7 +130,13 @@ include '../config.php';
               <tr>
                 <?php
                 foreach ($urlDemoLinux as $demo) {
-                  echo '<td><a href="' . $demo['link'] . '" target="_blank"><img src="../../images/download-icon.png"> ' . $demo['title'] . '</td>';
+                  if ($pro) {
+                    $link = '/download/?url=' . str_replace('free', 'pro', $demo['link']) . '&hash=' . $hash;
+                    echo '<td><a href="' . $link
+                    . '" target="_blank"><img src="../../images/download-icon.png"> ' . $demo['title'] . '</td>';
+                  } else {
+                    echo '<td><a href="//downloads.klokantech.com/maptiler/' . $demo['link'] . '" target="_blank"><img src="../../images/download-icon.png"> ' . $demo['title'] . '</td>';
+                  }
                 }
                 ?>
               </tr>
