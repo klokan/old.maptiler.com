@@ -103,11 +103,11 @@
       <div class="one-page">
         <div class="container clearfix">
           <div class="sixteen columns bottom-2" style="border-bottom: 1px solid #e6e6e6; ">
-            <h1 class="title">How to publish images and maps online?<br>Overview of available tools</h1>
+            <h1 class="title">Cultural heritage: Images and maps online</h1>
             <p class="description">
               There are several ways, how to publish historical documents, such as maps, paintings or books on the institution’s website. This overview is based on our experience with such projects and recommends proven and suitable ways, to deliver the online content to visitors.                       
             </p>  
-            <center><h2>Images or maps?</h2></center>
+            <center><h2>Images or maps</h2></center>
             <p class="description">
               Basically, there are only two steps in the process of publishing large imagery online. In the case of publishing maps there are four steps — the result is online maps with geographical position and possible <a href="http://mapranksearch.com"> Geographical Search</a>. 
             </p>  
@@ -153,7 +153,6 @@
             </ul>
           </div>
           <div class="eight columns">
-            img
           </div>
         </div>
         <div class="container clearfix line">
@@ -165,21 +164,13 @@
               <strong>Disadvantage:</strong> You need a server (that costs money) and staff that ensures the server is running, updated and in good shape.</p>
 
             <h4>Publishing with image server</h4>
-            <p>IIPImage is a lightweight client-server system for fast and efficient online viewing and zooming of ultra high-resolution images. It is available for free, under an open source license (GNU GPL). We recommend installing the software on a Linux (or other UNIX) server. There is a prepared and easy-to-install binary package for Debian and Ubuntu with <a href="https://github.com/klokantech/iiifserver/">step-by-step instructions for installation</a> or an <a href="https://github.com/klokantech/iiifserver/releases">installer for Windows servers</a>.</p>
+            <p>IIPImage is a lightweight client-server system for fast and efficient online viewing and zooming of ultra high-resolution images. It is available for free, under an open source license (GNU GPL). We recommend installing the software on a Linux (or other UNIX) server.  There is a prepared and easy-to-install <a href="https://github.com/klokantech/iiifserver/releases"> binary package for Windows servers</a>.</p>
 
-            <p>The format of the files is JPEG2000 and it has been implemented using the Kakadu library, which provides one of the fastest implementations of the JPEG2000 ISO standard and is redistributable for non-commercial use. We also have commercial licenses available. If your files are saved in a different format (TIFF, PNG, JPEG, etc.), there is a utility created by Klokan Technologies that converts your files into JPEG200. The utility is available at: (TODO - brother). Images are accessed via <a href="http://www.iiif.io">IIIF protocol</a>.</p>
-
+            <p>The format of the files is JPEG2000 and it has been implemented using the Kakadu library redistributable for non-commercial use. Commercial licenses are available as well. If your files are saved in a different format (TIFF, PNG, JPEG, etc.), as a part of the installer there is a utility created by Klokan Technologies that converts your files into JPEG200. Images are accessed via <a href="http://www.iiif.io">IIIF protocol</a>.</p>
 
             <h4>Publishing with pre-rendered .jpg tiles</h4>
 
-            <p>Any standard web hosting (PHP/MySQL) site, where you can host simple HTML files and images, can also host the zoomable maps without any extra configuration.</p>
-
-            <ol>
-              <li>Download and run Zoomify Express from the Zoomify.com website to your desktop — use either the "Download Win" or "Download Mac" button.</li>
-              <li>As soon as you start the Zoomifyer application, it will ask you for an image file to process (TIFF or JPEG files). Then it generates a folder full of image tiles.</li>
-              <li>You should place a simple web viewer into the produced directory. It’s easiest to copy our prepared template: the index.html file and the ZoomifyViewer.swf (use right click and "save as" to save those linked files to your computer). These two files should be in the directory with the rendered tiles — exactly in the same place where the ImageProperties.xml file is.</li>
-              <li>Upload the whole directory tree to the web (for example with any FTP client). Point your web browser to the index.html on your hosting. Done!</li>
-            </ol>
+            <p>Any standard web hosting (PHP/MySQL) site, where you can host simple HTML files and images, can also host the zoomable maps without any extra configuration. A step-by-step tutorial for the setup is available at <a href="http://project.oldmapsonline.org/publish"> OldMapsOnline page</a>.</p>
           </div>
 
           <div class="eight columns">
@@ -190,13 +181,14 @@
             <h4>IIIF Hosting</h4>
 
             <p>IIIF hosting from Klokan Technologies is a service for stable hosting with support of IIIF protocol, which is a proven solution for the hosting of large imagery daily. It’s used by many of our customers. The prices start at 69 USD for 30GB/month. The images are loaded via FTP, or you can just send us the hard drive and we load them for you. Please <a href="http://klokantech.com/contact/">contact us for the pricing details</a>.</p>
+            <iframe width="420" height="315" src="//www.youtube.com/embed/RNy9-1jv7mw?rel=0" frameborder="0" allowfullscreen></iframe>
 
           </div> 
         </div> 
       </div>
       <div class="one-page services">
-        <div class="container clearfix line">
-          <div class="eight columns" id="viewer">
+        <div class="container clearfix">
+          <div class="eight columns" id="viewer">            
             <h2>2) Suitable online viewer</h2>
             <p>When step one is finished, the maps are online. To be able to view these online images an online viewer is required. As your files are saved in JPEG2000 format, there are several open-source web viewers that can be used:</p>
 
@@ -209,13 +201,21 @@
             </ul>
             <br>
             <p><a href="http://klokantech.github.io/iiifviewer/">Demo and source code of IIIF viewer </a>is available on github.</p>
-          </div>
-          <div class="eight columns">
             <h3>OpenSeadragon</h3>
             <p>OpenSeadragon is an open-source, Javascript viewer enabling smooth, deep zoom and pan of high-resolution images. OpenSeadragon is IIIF compatible. A demo of OpenSeadragon in action can be seen on the <a href="http://openseadragon.github.io/">project homepage</a>.</p>
 
+          </div>
+          <div class="eight columns">
+            <center>
+              <img src="//www.maptiler.com/images/iiifviewer-screen.png" alt="IIIF viewer" style="height: 350px;">
+            </center> 
             <h3>IIPMooViewer</h3>
             <p>IIPMooViewer is an open source, Javascript and HTML5 image streaming and zooming client. IIPMooViewer is IIIF-compatible and works with <a href="https://github.com/ruven/iipsrv/tree/iiif">IIPServer</a> or other IIIF compatible servers. Visit the <a href="http://iipimage.sourceforge.net/demo/">IIP demo</a> page to see the IIP viewers in action.</p>
+          </div>
+        </div>
+        <div class="container clearfix line">
+          <div class="sixteen columns" style="padding-top: 30px;">  
+
             <p>At this point, the images from your collection are online and accessible via the zoomable viewer. This solution is sufficient for non-geographical images, such as paintings, books, manuscripts etc. With infrastructure and open-source tools it is possible to achieve this point without any license or software fees, only your own labor costs. If any step is not clear, Klokan Technologies provides consultation and support services that cover the mentioned topic.</p>
             <p>Maps are a bit more specific and need to be processed further. The key is to assign coordinates (latitude x longitude) to your online maps. This topic is covered in the next section.</p>
 
@@ -230,7 +230,7 @@
 
             <p>There are three online tools that can be used to assign a geographical position to your maps:</p>
 
-            <h3>Bounding Box and Geoparser</h3>
+            <h3>Bounding Box and GeoParser</h3>
             <p>Free tools from Klokan Technologies, which is widely used by many institutions. <br>
             <p><a href="http://boundingbox.klokantech.com/">Bounding Box</a> - Drag a rectangle over the location that is covered by the map. Then, copy and paste the coordinates into your library catalog. Supported formats are MARC, DUBLIN CORE, KML, GEOJSON and CSV. This tool is ideal if you have a paper map in hand and need to define the area that it covers.</p>
 
@@ -258,7 +258,7 @@
 
             <p>The historical map can appear as an overlay on the correct position over modern maps or Google Earth. Via crowdsourcing, you can invite visitors of your website or the general public to actively participate and help your institution with the location of your maps. In the successful crowdsourcing projects, hundreds of maps have been georeferenced within days or weeks by the public, with a positive impact on the institution’s likeness.</p>
 
-            <p>For more information and pricing, please visit <a href="http://www.georeferencer.com">page about Georeferencer</a></p>
+            <p>For more information and pricing, please visit <a href="http://www.georeferencer.com">page about Georeferencer</a>.</p>
           </div>
 
         </div>
