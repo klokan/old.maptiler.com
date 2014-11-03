@@ -99,50 +99,29 @@ if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
       <!-- Content -->
       <!-- Pricing table -->
       <div class="one-page bottom-3" id="pricing">
-        <br>
-        <br>
-        <br>
-        <br>
+        <br><br><br><br>
         <div class="container clearfix">
           <?php
           if ($pro) {
             echo '<h2>MapTiler Pro for Linux</h2>';
+            printTable($distLinux['pro'], $hash);
+            ?> 
+            <p>
+              <small>* requires the installation of <a href="//fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F">EPEL7 repository</a></small>
+            </p>
+            <?php
+            echo '<br><br><br><br>';
+            echo '<h3>Headless (command line tools only)</h3>';
+            printTable($distLinux['headless'], $hash);
           } else {
             echo '<h2>MapTiler Free/Start/Plus for Linux</h2>';
+            printTable($distLinux['free'], false);
           }
           ?>
-          <table class="style">
-            <tbody>
-              <tr>
-                <?php
-                foreach ($urlDemoLinux as $demo) {
-                  echo '<td style="width: 25%;"><img src="../../images/dist/' . strtolower($demo['dist']) . '-logo.png"></td>';
-                }
-                ?>
-              </tr>
-              <tr>
-                <?php
-                foreach ($urlDemoLinux as $demo) {
-                  echo '<td><strong>' . $demo['dist'] . '</strong></td>';
-                }
-                ?>
-              </tr>
-              <tr>
-                <?php
-                foreach ($urlDemoLinux as $demo) {
-                  if ($pro) {
-                    $link = '/download/?url=' . str_replace('free', 'pro', $demo['link']) . '&hash=' . $hash;
-                    echo '<td><a href="' . $link
-                    . '" target="_blank"><img src="../../images/download-icon.png"> ' . $demo['title'] . '</td>';
-                  } else {
-                    echo '<td><a href="//downloads.klokantech.com/maptiler/' . $demo['link'] . '" target="_blank"><img src="../../images/download-icon.png"> ' . $demo['title'] . '</td>';
-                  }
-                }
-                ?>
-              </tr>
-            </tbody>
-          </table>
-          <p><small>* requires the installation of <a href="//fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F">EPEL7 repository</a></small></p>
+          <p>
+            <small>* requires the installation of <a href="//fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F">EPEL7 repository</a></small>
+          </p>
+          <br><br><br><br>
         </div>
       </div>
       <!-- End Pricing table -->
@@ -170,3 +149,46 @@ if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
     <!--jQuery library-->
   </body>
 </html>
+
+<?php
+
+function printTable($distLinux, $hash = false) {
+  echo '<table class="style"><tbody><tr>';
+  $rowCounter = 0;
+  foreach ($distLinux as $dist => $ver) {
+    echo '<td style="width: 25%;"><img src="../../images/dist/' . strtolower($dist) . '-logo.png"></td>';
+    if (count($ver) > $rowCounter) {
+      $rowCounter = count($ver);
+    }
+  }
+  ?>
+  </tr>
+  <tr>
+    <?php
+    foreach ($distLinux as $dist => $ver) {
+      echo '<td><strong>' . $dist . '</strong></td>';
+    }
+    ?>
+  </tr>
+  <?php
+  for ($i = 0; $i < $rowCounter; $i++) {
+    echo '<tr>';
+    foreach ($distLinux as $dist) {
+      if (isset($dist[$i])) {
+        if ($hash) {
+          $link = '/download/?url=' . str_replace('free', 'pro', $dist[$i]['link']) . '&hash=' . $hash;
+          echo '<td><a href="' . $link
+          . '" target="_blank"><img src="../../images/download-icon.png"> ' . $dist[$i]['title'] . '</td>';
+        } else {
+          echo '<td><a href="//downloads.klokantech.com/maptiler/' . $dist[$i]['link'] . '" target="_blank">'
+          . '<img src="../../images/download-icon.png"> ' . $dist[$i]['title'] . '</td>';
+        }
+      } else {
+        echo '<td></td>';
+      }
+    }
+    echo '</tr>';
+  }
+  echo '</tbody></table>';
+}
+?>
