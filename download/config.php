@@ -13,7 +13,7 @@ $distLinux['pro']['Redhat'][] = array('dist' => 'Redhat', 'title' => 'RHEL 7 *',
 $distLinux['pro']['Fedora'][] = array('dist' => 'Fedora', 'title' => 'Fedora 20 *', 'link' => 'maptiler-0.5.5-pro-linux.fc20.x86_64.rpm');
 
 $distLinux['headless']['Debian'][] = array('dist' => 'Debian', 'title' => '7 Wheezy', 'link' => 'maptiler-0.5.5-pro-headless.debian-wheezy.amd64.deb');
-$distLinux['headless']['Ubuntu'][] = array('dist' => 'Ubuntu', 'title' => 'Trusty 14.04', 'link' => 'maptiler-0.5.5-headless-linux.ubuntu-trusty.amd64.deb');
+$distLinux['headless']['Ubuntu'][] = array('dist' => 'Ubuntu', 'title' => 'Trusty 14.04', 'link' => 'maptiler-0.5.5-pro-headless-linux.ubuntu-trusty.amd64.deb');
 $distLinux['headless']['Redhat'][] = array('dist' => 'Redhat', 'title' => 'RHEL 7 *', 'link' => 'maptiler-0.5.5-pro-headless.el7.x86_64.rpm');
 $distLinux['headless']['Redhat'][] = array('dist' => 'Redhat', 'title' => 'RHEL 6 *', 'link' => 'maptiler-0.5.5-pro-headless.el6.x86_64.rpm');
 $distLinux['headless']['Fedora'][] = array('dist' => 'Fedora', 'title' => 'Fedora 20 *', 'link' => 'maptiler-0.5.5-pro-headless.fc20.x86_64.rpm');
