@@ -22,7 +22,10 @@ if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
     <link rel="stylesheet" href="../../css/skins/colors/blue.css">
     <link rel="stylesheet" href="../../css/layout/wide.css">
     <link rel="shortcut icon" href="../../images/favicon.ico">
-    <style type="text/css"></style>
+    <style type="text/css">
+      h2, h3{padding: 40px 0 10px 0;}
+      #download{padding-bottom: 50px;}
+    </style>
     <script>
       (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -98,8 +101,7 @@ if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
       <!-- End Header -->
       <!-- Content -->
       <!-- Pricing table -->
-      <div class="one-page bottom-3" id="pricing">
-        <br><br><br><br>
+      <div class="one-page bottom-3" id="download">
         <div class="container clearfix">
           <?php
           if ($pro) {
@@ -107,10 +109,11 @@ if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
             printTable($distLinux['pro'], $hash);
             ?> 
             <p>
-              <small>* requires the installation of <a href="//fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F">EPEL7 repository</a></small>
+              <small>* requires the installation of 
+                <a href="//fedoraproject.org/wiki/EPEL/FAQ#How_can_I_install_the_packages_from_the_EPEL_software_repository.3F" target="_blank">EPEL repository</a>
+              </small>
             </p>
             <?php
-            echo '<br><br><br><br>';
             echo '<h3>Headless (command line tools only)</h3>';
             printTable($distLinux['headless'], $hash);
           } else {
@@ -119,9 +122,10 @@ if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
           }
           ?>
           <p>
-            <small>* requires the installation of <a href="//fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F">EPEL7 repository</a></small>
+            <small>* requires the installation of 
+              <a href="//fedoraproject.org/wiki/EPEL/FAQ#How_can_I_install_the_packages_from_the_EPEL_software_repository.3F" target="_blank">EPEL repository</a>
+            </small>
           </p>
-          <br><br><br><br>
         </div>
       </div>
       <!-- End Pricing table -->
