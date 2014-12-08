@@ -41,7 +41,7 @@ header.style-3 .navigation ul li a.selected, header.style-3 .navigation ul li.ac
 .oldmaponline .two-third{ width: 600px; float: none; }
 .oldmaponline h3 { font: 400 24px/1 'Open Sans'; margin: 22px 0 17px 0;}
 .oldmaponline p {margin-left: 0px; padding-bottom: 21px; margin-bottom: 12px; line-height: 20px; }
-
+.oldmaponline img{width: 140px; height: 138px; margin-top: 15px;}
 .oldmaponline .logo_oldmaps { position: relative; top: -1px; left: -2px;}
  
 .footer-down { padding: 15px 0; background: White; border-top: 1px solid #eae6e2; color: #989898; font-size: 11px; }
