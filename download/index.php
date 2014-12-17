@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_GET['url']) && !empty($_GET['url'])) {
-  //libs form pricing
+  //signed downoad link from amazon
   include_once '../pricing/limeLM.php';
   include_once '../pricing/libs/S3.php';
   include_once '../pricing/secure.php';
@@ -23,17 +23,30 @@ if (isset($_GET['url']) && !empty($_GET['url'])) {
     echo 'Verification failed!';
     die;
   }
+} elseif (isset($_GET['email']) && isset($_GET['key'])) {
+  //download for pro customers
+  $os = detectOs();
+  header('Location: /download/' . $os . '/?' . $_SERVER['QUERY_STRING']);
+  
 } else {
-  include 'config.php';
+  //autodetect free download
+  $os = detectOs();
+  header('Location: /download/' . $os . '/');
+}
 
+/**
+ * Detect os from $_SERVER['HTTP_USER_AGENT']
+ * @return string
+ */
+function detectOs() {
   $userAgent = $_SERVER['HTTP_USER_AGENT'];
-
   if (preg_match('/MAC/', strtoupper($userAgent))) {
-    header('Location:' . $urlDemoMac);
+    $os = 'mac';
   } elseif (preg_match('/LINUX/', strtoupper($userAgent))) {
-    header('Location: /download/linux/');
+    $os = 'linux';
   } else {
     //other or win
-    header('Location:' . $urlDemoWin);
+    $os = 'win';
   }
+  return $os;
 }

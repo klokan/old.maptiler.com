@@ -1,6 +1,9 @@
 <?php
 
-$urlDemoWin = 'http://downloads.klokantech.com/maptiler/maptiler-0.5.5-free-x64-x86-setup.exe';
+$downlodUrl = 'http://downloads.klokantech.com/maptiler/';
+
+$distWindows['free'] = 'maptiler-0.5.5-free-x64-x86-setup.exe';
+$distWindows['pro'] = 'maptiler-0.5.5-pro-x64-x86-setup.exe';
 
 $distLinux['free']['Debian'][] = array('dist' => 'Debian', 'title' => '7 Wheezy', 'link' => 'maptiler-0.5.5-free-linux.debian-wheezy.amd64.deb');
 $distLinux['free']['Ubuntu'][] = array('dist' => 'Ubuntu', 'title' => 'Trusty 14.04', 'link' => 'maptiler-0.5.5-free-linux.ubuntu-trusty.amd64.deb');
@@ -18,4 +21,5 @@ $distLinux['headless']['Redhat'][] = array('dist' => 'Redhat', 'title' => 'RHEL 
 $distLinux['headless']['Redhat'][] = array('dist' => 'Redhat', 'title' => 'RHEL 6 *', 'link' => 'maptiler-0.5.5-pro-headless.el6.x86_64.rpm');
 $distLinux['headless']['Fedora'][] = array('dist' => 'Fedora', 'title' => 'Fedora 20 *', 'link' => 'maptiler-0.5.5-pro-headless.fc20.x86_64.rpm');
 
-$urlDemoMac = 'http://downloads.klokantech.com/maptiler/maptiler-0.5.5-free-mac.dmg';
+$distMac['free'] = 'maptiler-0.5.5-free-mac.dmg';
+$distMac['pro'] = 'maptiler-0.5.5-pro-mac.dmg';

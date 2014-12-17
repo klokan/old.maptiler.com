@@ -5,6 +5,19 @@ include_once '../../pricing/secure.php';
 if (isset($_GET['hash']) && $_GET['hash'] == md5($keys['awsAccessKey'])) {
   $hash = $_GET['hash'];
   $pro = true;
+} elseif (isset($_GET['email']) && isset($_GET['key'])) {
+  //pro download with key and email
+  include_once '../../pricing/limeLM.php';
+  $email = $_GET['email'];
+  $key = $_GET['key'];
+
+  //check if customer have pro licence
+  $LM = new Maptiler\Limelm;
+  if ($LM->verifyUser($email, $key)) {
+    $pro = true;
+  } else {
+    $pro = false;
+  }
 } else {
   $pro = false;
 }
