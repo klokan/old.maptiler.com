@@ -26,8 +26,7 @@ if (isset($_GET['url']) && !empty($_GET['url'])) {
 } elseif (isset($_GET['email']) && isset($_GET['key'])) {
   //download for pro customers
   $os = detectOs();
-  header('Location: /download/' . $os . '/?' . $_SERVER['QUERY_STRING']);
-  
+  header('Location: /download/' . $os . '/?email=' . $_GET['email'] . '&key=' . $_GET['key']);
 } else {
   //autodetect free download
   $os = detectOs();
