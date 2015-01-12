@@ -104,7 +104,7 @@
       </header>
       <!-- End Header -->
       <!-- Content -->
-      <!-- Pricing table -->
+      <!-- Support block -->
       <div class="one-page bottom-3" id="pricing">
         <br/>
         <div class="container clearfix">
@@ -114,20 +114,18 @@
 <iframe width="100%" height="1200" scrolling="no" frameborder="0" allowtransparency="true" src="https://groups.google.com/forum/embed/?place=forum/maptiler&showsearch=true&showpopout=true&parenturl=https://groups.google.com/forum/embed/"></iframe>
 -->
 
-<iframe style="width: 100%; height:1200; border: none;" id="forumEmbed" src="javascript:void(0)">
-</iframe>
-</div>
-
+<iframe id="forum_embed" src="javascript:void(0)" scrolling="no" frameborder="0" width="100%" height="1200"></iframe>
 <script type="text/javascript">
- document.getElementById("forumEmbed").src =
-  "https://groups.google.com/forum/embed/?place=forum/maptiler" +
-  "&showsearch=true&showpopout=true&hideforumtitle=true&parenturl=https%3A%2F%2Fmaptiler.com%2Fsupport%2F";
+  document.getElementById('forum_embed').src =
+     'https://groups.google.com/forum/embed/?place=forum/maptiler'
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
 </script>
 
 
         </div>
       </div>
-      <!-- End Pricing table -->
+      <!-- End Support block -->
 
       <!-- Contact form -->
       <div class="bottom-3" id="requestDemoForm" style="background: #f6f6f6; padding: 25px 0 0 0; display: none;">
