@@ -20,7 +20,7 @@
 /* Import Basic Files
 ================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,latin-ext);  /* Custom Font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,latin-ext);  /* Custom Font */
 @import url("base.css");                                 /* Reset & Basics */
 @import url("font-awesome/css/font-awesome.min.css");    /* Font Awesome */
 @import url("fontello/css/fontello.css");                /* Fontello Social */
